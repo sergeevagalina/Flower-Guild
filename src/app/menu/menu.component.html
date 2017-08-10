@@ -10,7 +10,7 @@
   </div>
   <div fxFlex>
     <md-grid-list cols="2" rowHeight="200px">
-      <md-grid-tile *ngFor="let flower of flowers">
+      <md-grid-tile *ngFor="let flower of flowers" (click)="onSelect(flower)">
         <img height="200px" src="{{flower.image}}" alt="{{flower.name}}">
         <md-grid-tile-footer>
           <h1> {{flower.name | uppercase}} </h1>
@@ -18,22 +18,5 @@
       </md-grid-tile>
     </md-grid-list>
   </div>
-  <div fxFlex *ngIf="selectedFlower">
-    <md-card>
-      <md-card-header>
-        <md-card-title>
-          <h3>{{selectedFlower.name | uppercase}}</h3>
-        </md-card-title>
-      </md-card-header>
-      <img md-card-image src={{selectedFlower.image}} alt={{selectedFlower.name}}>
-      <md-card-content>
-        <p>{{selectedFlower.description}}
-        </p>
-      </md-card-content>
-      <md-card-actions>
-        <button md-button>LIKE</button>
-        <button md-button>SHARE</button>
-      </md-card-actions>
-    </md-card>
-  </div>
+  <app-flowerdetail [flower]="selectedFlower"></app-flowerdetail>
 </div>

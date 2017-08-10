@@ -1,0 +1,37 @@
+<div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around center"
+  fxLayoutGap="10px" fxLayoutGap.xs="0">
+
+  <div fxFlex="40">
+    <div fxFlex *ngIf="flower">
+      <md-card>
+        <md-card-header>
+          <md-card-title>
+            <h3>{{flower.name | uppercase}}</h3>
+          </md-card-title>
+        </md-card-header>
+        <img md-card-image src={{flower.image}} alt={{flower.name}}>
+        <md-card-content>
+          <p>{{flower.description}}
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button>LIKE</button>
+          <button md-button>SHARE</button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <div fxFlex="40">
+    <md-list *ngIf="flower">
+      <md-list-item *ngFor="let advice of flower.advices"> 
+        <p md-line>{{advice.advice}}</p>
+        <p md-line>{{advice.author}}</p>
+        <p md-line>{{advice.date | date}}</p>
+      </md-list-item>
+    </md-list>
+  </div>
+
+
+
+</div>
