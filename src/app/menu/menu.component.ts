@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Flower } from '../shared/flower';
 import { FLOWERS } from '../shared/flowers';
+import { FlowerService } from '../services/flower.service';
 
 @Component({
   selector: 'app-menu',
@@ -9,14 +10,15 @@ import { FLOWERS } from '../shared/flowers';
 })
 export class MenuComponent implements OnInit {
 
-  flowers: Flower[] = FLOWERS;
+  flowers: Flower[];
 
   selectedFlower: Flower;
 
 
-  constructor() { }
+  constructor(private flowerService: FlowerService) { }
 
   ngOnInit() {
+    this.flowers = this.flowerService.getFlowers();
   }
 
   onSelect(flower: Flower) {

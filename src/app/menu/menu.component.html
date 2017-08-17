@@ -4,12 +4,12 @@
 
   <div fxFlex>
     <div>
-      <h3>Secrets of care</h3>
+      <h3>Секреты ухода</h3>
       <hr>
     </div>
   </div>
   <div fxFlex>
-    <md-grid-list cols="2" rowHeight="200px">
+    <md-grid-list cols="3" rowHeight="200px" gutterSize="5px">
       <md-grid-tile *ngFor="let flower of flowers" (click)="onSelect(flower)">
         <img height="200px" src="{{flower.image}}" alt="{{flower.name}}">
         <md-grid-tile-footer>

@@ -9,6 +9,8 @@ import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
 
+import { FlowerService } from './services/flower.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,7 @@ import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [ FlowerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

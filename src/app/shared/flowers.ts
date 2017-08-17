@@ -2,7 +2,7 @@ import { Flower } from './flower';
 
 export const FLOWERS: Flower[] = [
     {
-      name: 'Hibiscus',
+      name: 'Гибискус',
       image: '/assets/images/hibiscus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
@@ -19,7 +19,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      name: 'Cactus',
+      name: 'Кактус',
       image: '/assets/images/cactus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
@@ -36,7 +36,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      name: 'Spathiphyllum',
+      name: 'Спатифиллум',
       image: '/assets/images/spathiphyllum.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
@@ -53,7 +53,41 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      name: 'Succulent',
+      name: 'Герань',
+      image: '/assets/images/geranium.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
+      advices: [
+        {
+          advice: 'Advice 5',
+          author: 'Author 5',
+          date: '2013-03-16T17:57:28.556094Z'
+        },
+        {
+          advice: 'Advice 6',
+          author: 'Author 6',
+          date: '2016-07-05T17:57:28.556094Z'
+        }
+      ]
+    },
+    {
+      name: 'Гортензия',
+      image: '/assets/images/hydrangea.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
+      advices: [
+        {
+          advice: 'Advice 5',
+          author: 'Author 5',
+          date: '2013-03-16T17:57:28.556094Z'
+        },
+        {
+          advice: 'Advice 6',
+          author: 'Author 6',
+          date: '2016-07-05T17:57:28.556094Z'
+        }
+      ]
+    },
+    {
+      name: 'Суккуленты',
       image: '/assets/images/succulent.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
