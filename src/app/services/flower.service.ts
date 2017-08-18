@@ -6,8 +6,13 @@ import { FLOWERS } from '../shared/flowers';
 export class FlowerService {
 
   constructor() { }
+
   getFlowers(): Flower[] {
     return FLOWERS;
+  }
+
+  getFlower(id: number): Flower {
+    return FLOWERS.filter((flower) => (flower.id === id))[0];
   }
 
 }

@@ -2,6 +2,7 @@ import { Flower } from './flower';
 
 export const FLOWERS: Flower[] = [
     {
+      id: 0,
       name: 'Гибискус',
       image: '/assets/images/hibiscus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -19,6 +20,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
+      id: 1,
       name: 'Кактус',
       image: '/assets/images/cactus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -36,6 +38,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
+      id: 2,
       name: 'Спатифиллум',
       image: '/assets/images/spathiphyllum.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -53,6 +56,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
+      id: 3,
       name: 'Герань',
       image: '/assets/images/geranium.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -70,6 +74,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
+      id: 4,
       name: 'Гортензия',
       image: '/assets/images/hydrangea.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -87,6 +92,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
+      id: 5,
       name: 'Суккуленты',
       image: '/assets/images/succulent.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',

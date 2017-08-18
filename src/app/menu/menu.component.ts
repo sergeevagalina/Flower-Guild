@@ -12,17 +12,10 @@ export class MenuComponent implements OnInit {
 
   flowers: Flower[];
 
-  selectedFlower: Flower;
-
-
   constructor(private flowerService: FlowerService) { }
 
   ngOnInit() {
     this.flowers = this.flowerService.getFlowers();
-  }
-
-  onSelect(flower: Flower) {
-    this.selectedFlower = flower;
   }
 
 }

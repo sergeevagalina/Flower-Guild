@@ -10,7 +10,7 @@
   </div>
   <div fxFlex>
     <md-grid-list cols="3" rowHeight="200px" gutterSize="5px">
-      <md-grid-tile *ngFor="let flower of flowers" (click)="onSelect(flower)">
+      <md-grid-tile *ngFor="let flower of flowers" [routerLink]="['/flowerdetail', flower.id]">
         <img height="200px" src="{{flower.image}}" alt="{{flower.name}}">
         <md-grid-tile-footer>
           <h1> {{flower.name | uppercase}} </h1>
@@ -18,5 +18,4 @@
       </md-grid-tile>
     </md-grid-list>
   </div>
-  <app-flowerdetail [flower]="selectedFlower"></app-flowerdetail>
 </div>
