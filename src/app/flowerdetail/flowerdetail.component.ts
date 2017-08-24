@@ -19,8 +19,8 @@ export class FlowerdetailComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    let id = +this.route.snapshot.params['id'];
-    this.flower = this.flowerservice.getFlower(id);
+    const id = +this.route.snapshot.params['id'];
+    this.flowerservice.getFlower(id).then(flower => this.flower = flower);
   }
 
 }

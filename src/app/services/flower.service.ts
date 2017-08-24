@@ -11,8 +11,8 @@ export class FlowerService {
     return FLOWERS;
   }
 
-  getFlower(id: number): Flower {
-    return FLOWERS.filter((flower) => (flower.id === id))[0];
+  getFlower(id: number): Promise<Flower> {
+    return Promise.resolve(FLOWERS.filter((flower) => (flower.id === id))[0]);
   }
 
 }

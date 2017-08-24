@@ -1,3 +1,19 @@
-<p>
-  articles works!
-</p>
+<div class="container" fxLayout="column" fxLayoutGap="10px">
+  <div fxFlex>
+    <md-list>
+      <md-list-item *ngFor="let article of articles">
+        <img md-list-avatar src={{article.image}} alt={{article.name}}>
+        <h3 md-line>
+          <span> {{article.name}} </span>
+        </h3>
+        <p md-line>
+          <span> {{article.description}} </span>
+        </p>
+      </md-list-item>
+    </md-list>
+  </div>
+  <div [hidden]="articles">
+    <md-spinner></md-spinner>
+    <h4>Loading . . . Please Wait</h4>
+  </div>
+</div>
