@@ -4,6 +4,7 @@ import { MenuComponent } from '../menu/menu.component';
 import { FlowerdetailComponent } from '../flowerdetail/flowerdetail.component';
 import { MainComponent } from '../main/main.component';
 import { ArticlesComponent } from '../articles/articles.component';
+import { ArticledetailComponent } from '../articledetail/articledetail.component';
 import { DiscussionsComponent } from '../discussions/discussions.component';
 
 export const routes: Routes = [
@@ -11,6 +12,7 @@ export const routes: Routes = [
     {path: 'flowerdetail/:id', component: FlowerdetailComponent},
     {path: 'main', component: MainComponent},
     {path: 'articles', component: ArticlesComponent},
+    {path: 'articledetail/:id', component: ArticledetailComponent},
     {path: 'discussions', component: DiscussionsComponent}
 ];
 

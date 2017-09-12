@@ -11,7 +11,7 @@ export class ArticleService {
     return ARTICLES;
   }
 
-  getArticle(id: number): Article {
-    return ARTICLES.filter((article) => (article.id === id))[0];
+  getArticle(id: number): Promise<Article> {
+    return Promise.resolve(ARTICLES.filter((article) => (article.id === id))[0]);
   }
 }

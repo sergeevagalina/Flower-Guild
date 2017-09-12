@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
+import { ArticledetailComponent } from './articledetail/articledetail.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ArticleService } from './services/article.service';
     MainComponent,
     DiscussionsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ArticledetailComponent
   ],
   imports: [
     BrowserModule,
