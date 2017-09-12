@@ -2,16 +2,21 @@ import { Injectable } from '@angular/core';
 import { Article } from '../shared/article';
 import { ARTICLES } from '../shared/articles';
 
+import { Observable } from 'rxjs/Observable';
+
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/catch';
+
 @Injectable()
 export class ArticleService {
 
   constructor() { }
 
-  getArticles(): Article[] {
-    return ARTICLES;
+  getArticles(): Observable<Article[]> {
+    return Observable.of(ARTICLES);
   }
 
-  getArticle(id: number): Promise<Article> {
-    return Promise.resolve(ARTICLES.filter((article) => (article.id === id))[0]);
+  getArticle(id: number): Observable<Article> {
+    return Observable.of(ARTICLES.filter((article) => (article.id === id))[0]);
   }
 }

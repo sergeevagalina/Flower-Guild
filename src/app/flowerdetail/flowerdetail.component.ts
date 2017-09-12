@@ -20,7 +20,8 @@ export class FlowerdetailComponent implements OnInit {
 
   ngOnInit() {
     const id = +this.route.snapshot.params['id'];
-    this.flowerservice.getFlower(id).then(flower => this.flower = flower);
+    this.flowerservice.getFlower(id).
+      subscribe(flower => this.flower = flower);
   }
 
 }

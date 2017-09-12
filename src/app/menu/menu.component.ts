@@ -15,7 +15,8 @@ export class MenuComponent implements OnInit {
   constructor(private flowerService: FlowerService) { }
 
   ngOnInit() {
-    this.flowers = this.flowerService.getFlowers();
+    this.flowerService.getFlowers()
+      .subscribe(flowers => this.flowers = flowers);
   }
 
 }

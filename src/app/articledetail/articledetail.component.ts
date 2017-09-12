@@ -3,6 +3,8 @@ import { Params, ActivatedRoute } from '@angular/router';
 import { Article } from '../shared/article';
 import { ArticleService } from '../services/article.service';
 
+import 'rxjs/add/operator/switchMap';
+
 @Component({
   selector: 'app-articledetail',
   templateUrl: './articledetail.component.html',
@@ -17,7 +19,8 @@ export class ArticledetailComponent implements OnInit {
 
   ngOnInit() {
     const id = +this.route.snapshot.params['id'];
-    this.articleservice.getArticle(id).then(article => this.article = article);
+    this.articleservice.getArticle(id)
+      .subscribe(article => this.article = article);
   }
 
 }
