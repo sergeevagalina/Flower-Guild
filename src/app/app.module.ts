@@ -16,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { FlowerService } from './services/flower.service';
+import { ArticleService } from './services/article.service';
 
 
 @NgModule({
@@ -36,7 +37,10 @@ import { FlowerService } from './services/flower.service';
     FlexLayoutModule,
     AppRoutingModule
   ],
-  providers: [ FlowerService],
+  providers: [
+    FlowerService,
+    ArticleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
