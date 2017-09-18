@@ -3,7 +3,8 @@ import { Article } from './article';
 export const ARTICLES: Article[] = [
     {
         id: 0,
-        name: 'Спатифиллум: почему сохнут кончики листьев',
+        name: 'Спатифиллум',
+        title: 'Спатифиллум: почему сохнут кончики листьев',
         image: '/assets/images/spathiphyllum.jpg',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
@@ -13,7 +14,8 @@ export const ARTICLES: Article[] = [
     },
     {
         id: 1,
-        name: 'Гортензия: как изменить окрас соцветий',
+        name: 'Гортензия',
+        title: 'Гортензия: как изменить окрас соцветий',
         image: '/assets/images/hydrangea.jpg',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
@@ -23,7 +25,8 @@ export const ARTICLES: Article[] = [
     },
     {
         id: 2,
-        name: 'Суккуленты: многообразие видов',
+        name: 'Суккуленты',
+        title: 'Cуккуленты: многообразие видов',
         image: '/assets/images/succulent.jpg',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',

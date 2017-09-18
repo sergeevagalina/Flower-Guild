@@ -1,3 +1,26 @@
-<p>
-  main works!
-</p>
+<div class="container" fxLayout="column" fxLayoutGap="20px">
+
+  <div fxFlex>
+    <div>
+      <h1>О проекте</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie, nisi quis consequat volutpat, metus turpis finibus est, a elementum lorem felis at magna. Etiam elementum consectetur interdum. Integer condimentum eros id blandit tempus. Quisque eget orci volutpat, porta magna id, euismod dolor. Nullam ornare bibendum massa, a feugiat sem tempus nec. Nullam venenatis aliquet dolor. Etiam ultricies pharetra justo at volutpat. Pellentesque feugiat sed nulla eget viverra. Pellentesque placerat iaculis sollicitudin. Fusce libero enim, accumsan sit amet dolor eget, porttitor facilisis urna.</p>
+    </div>
+  </div>
+
+  <div fxFlex *ngIf="articles">
+    <h2>Последние добавленные статьи</h2>
+    <md-list>
+      <md-list-item *ngFor="let article of articles">
+        <img md-list-avatar src={{article.image}} alt={{article.title}}>
+        <a md-line [routerLink]="['/articledetail', article.id]">
+          <span> {{article.title}} </span>
+        </a>
+        <p md-line>
+          <span> {{article.review}} </span>
+        </p>
+      </md-list-item>
+    </md-list>
+  </div>
+
+</div>

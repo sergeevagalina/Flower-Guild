@@ -8,12 +8,12 @@ export const FLOWERS: Flower[] = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
-          advice: 'Advice 1',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 1',
           date: '2012-10-16T17:57:28.556094Z'
         },
         {
-          advice: 'Advice 2',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 2',
           date: '2014-09-05T17:57:28.556094Z'
         }
@@ -26,12 +26,12 @@ export const FLOWERS: Flower[] = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
-          advice: 'Advice 3',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 3',
           date: '2013-03-16T17:57:28.556094Z'
         },
         {
-          advice: 'Advice 4',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 4',
           date: '2016-07-05T17:57:28.556094Z'
         }
@@ -44,12 +44,12 @@ export const FLOWERS: Flower[] = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
-          advice: 'Advice 5',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 5',
           date: '2013-03-16T17:57:28.556094Z'
         },
         {
-          advice: 'Advice 6',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 6',
           date: '2016-07-05T17:57:28.556094Z'
         }
@@ -62,12 +62,12 @@ export const FLOWERS: Flower[] = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
-          advice: 'Advice 5',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 5',
           date: '2013-03-16T17:57:28.556094Z'
         },
         {
-          advice: 'Advice 6',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 6',
           date: '2016-07-05T17:57:28.556094Z'
         }
@@ -80,12 +80,12 @@ export const FLOWERS: Flower[] = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
-          advice: 'Advice 5',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 5',
           date: '2013-03-16T17:57:28.556094Z'
         },
         {
-          advice: 'Advice 6',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
           author: 'Author 6',
           date: '2016-07-05T17:57:28.556094Z'
         }
@@ -98,12 +98,12 @@ export const FLOWERS: Flower[] = [
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
-          advice: 'Advice 5',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum.',
           author: 'Author 5',
           date: '2013-03-16T17:57:28.556094Z'
         },
         {
-          advice: 'Advice 6',
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum.',
           author: 'Author 6',
           date: '2016-07-05T17:57:28.556094Z'
         }

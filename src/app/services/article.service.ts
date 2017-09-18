@@ -19,4 +19,12 @@ export class ArticleService {
   getArticle(id: number): Observable<Article> {
     return Observable.of(ARTICLES.filter((article) => (article.id === id))[0]);
   }
+
+  getRelevantArticles(name: string): Observable<Article[]> {
+    return Observable.of(ARTICLES.filter((article) => article.name === name));
+  }
+
+  getLastArticles(): Observable<Article[]> {
+    return Observable.of(ARTICLES.filter((article) => (article.id > ARTICLES.length - 3)));
+  }
 }

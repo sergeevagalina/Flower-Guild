@@ -2,9 +2,9 @@
   <div fxFlex *ngIf="articles">
     <md-list>
       <md-list-item *ngFor="let article of articles">
-        <img md-list-avatar src={{article.image}} alt={{article.name}}>
+        <img md-list-avatar src={{article.image}} alt={{article.title}}>
         <a md-line [routerLink]="['/articledetail', article.id]">
-          <span> {{article.name}} </span>
+          <span> {{article.title}} </span>
         </a>
         <p md-line>
           <span> {{article.review}} </span>

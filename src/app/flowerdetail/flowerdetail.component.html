@@ -14,10 +14,6 @@
           <p>{{flower.description}}
           </p>
         </md-card-content>
-        <md-card-actions>
-          <button md-button>LIKE</button>
-          <button md-button>SHARE</button>
-        </md-card-actions>
       </md-card>
     </div>
   </div>
@@ -32,6 +28,21 @@
     </md-list>
   </div>
 
+</div>
 
-
+<div class="container" fxLayout="row" fxLayoutAlign.gt-md="space-around center"
+fxLayoutGap="10px" fxLayoutGap.xs="0">
+    <div fxFlex *ngIf="articles">
+        <md-list>
+          <md-list-item *ngFor="let article of articles">
+            <img md-list-avatar src={{article.image}} alt={{article.title}}>
+            <a md-line [routerLink]="['/articledetail', article.id]">
+              <span> {{article.title}} </span>
+            </a>
+            <p md-line>
+              <span> {{article.review}} </span>
+            </p>
+          </md-list-item>
+        </md-list>
+      </div>
 </div>
