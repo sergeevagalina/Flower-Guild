@@ -3,7 +3,7 @@ import { Article } from './article';
 export const ARTICLES: Article[] = [
     {
         id: 0,
-        name: 'Спатифиллум',
+        flowerId: 2,
         title: 'Спатифиллум: почему сохнут кончики листьев',
         image: '/assets/images/spathiphyllum.jpg',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
@@ -14,7 +14,7 @@ export const ARTICLES: Article[] = [
     },
     {
         id: 1,
-        name: 'Гортензия',
+        flowerId: 4,
         title: 'Гортензия: как изменить окрас соцветий',
         image: '/assets/images/hydrangea.jpg',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
@@ -25,7 +25,7 @@ export const ARTICLES: Article[] = [
     },
     {
         id: 2,
-        name: 'Суккуленты',
+        flowerId: 5,
         title: 'Cуккуленты: многообразие видов',
         image: '/assets/images/succulent.jpg',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',

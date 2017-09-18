@@ -23,12 +23,11 @@ export class FlowerdetailComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = +this.route.snapshot.params['id'];
-    this.flowerservice.getFlower(id).
-      subscribe(flower => this.flower = flower);
-    const name = this.flower.name;
-    this.articleservice.getRelevantArticles(name).
-      subscribe(articles => this.articles = articles);
+    this.route.params.switchMap(params => this.flowerservice.getFlower(+params['id']))
+    .subscribe(flower => this.flower = flower);
+
+    this.route.params.switchMap(params => this.articleservice.getRelevantArticles(+params['id']) )
+    .subscribe(articles => this.articles = articles );
   }
 
 }

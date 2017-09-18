@@ -1,6 +1,6 @@
 export class Article {
     id: number;
-    name: string;
+    flowerId: number;
     title: string;
     image: string;
     review: string;

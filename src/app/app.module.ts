@@ -3,6 +3,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpModule } from '@angular/http';
+import { baseURL } from './shared/baseurl';
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import 'hammerjs';
@@ -18,10 +21,11 @@ import { MainComponent } from './main/main.component';
 import { DiscussionsComponent } from './discussions/discussions.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ArticledetailComponent } from './articledetail/articledetail.component';
 
 import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
-import { ArticledetailComponent } from './articledetail/articledetail.component';
+
 
 
 @NgModule({
@@ -41,12 +45,15 @@ import { ArticledetailComponent } from './articledetail/articledetail.component'
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    AppRoutingModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService, {delay: 1000}),
+    AppRoutingModule
   ],
   providers: [
     FlowerService,
-    ArticleService
+    ArticleService,
+    {provide: 'BaseURL', useValue: baseURL},
+    ProcessHTTPMsgService
   ],
   bootstrap: [AppComponent]
 })

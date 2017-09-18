@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Flower } from '../shared/flower';
-import { FLOWERS } from '../shared/flowers';
 import { FlowerService } from '../services/flower.service';
 
 @Component({
@@ -16,7 +15,8 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.flowerService.getFlowers()
-      .subscribe(flowers => this.flowers = flowers);
+      .subscribe(flowers =>
+        this.flowers = flowers);
   }
 
 }

@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Article } from '../shared/article';
-import { ARTICLES } from '../shared/articles';
+import { Http } from '@angular/http';
+import { ProcessHTTPMsgService } from './process-httpmsg.service';
+import { baseURL } from '../shared/baseurl';
 
 import { Observable } from 'rxjs/Observable';
 
@@ -10,21 +12,27 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class ArticleService {
 
-  constructor() { }
+  constructor(private http: Http,
+   private processHTTPMsgService: ProcessHTTPMsgService) { }
 
   getArticles(): Observable<Article[]> {
-    return Observable.of(ARTICLES);
+      return this.http.get(baseURL + 'articles')
+        .map(res => this.processHTTPMsgService.extractData(res));
   }
 
   getArticle(id: number): Observable<Article> {
-    return Observable.of(ARTICLES.filter((article) => (article.id === id))[0]);
+    return this.http.get(baseURL + 'articles/' + id)
+      .map(res => this.processHTTPMsgService.extractData(res));
   }
 
-  getRelevantArticles(name: string): Observable<Article[]> {
-    return Observable.of(ARTICLES.filter((article) => article.name === name));
+  getRelevantArticles(flowerId: number): Observable<Article[]> {
+    return this.http.get(baseURL + 'articles/' + flowerId)
+      .map(res => this.processHTTPMsgService.extractData(res));
   }
 
   getLastArticles(): Observable<Article[]> {
-    return Observable.of(ARTICLES.filter((article) => (article.id > ARTICLES.length - 3)));
+    return this.http.get(baseURL + 'articles')
+      .map(res => this.processHTTPMsgService.extractData(res));
   }
+
 }
