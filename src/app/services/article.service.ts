@@ -32,7 +32,11 @@ export class ArticleService {
 
   getLastArticles(): Observable<Article[]> {
     return this.http.get(baseURL + 'articles')
-      .map(res => this.processHTTPMsgService.extractData(res));
+      .map(res => this.processHTTPMsgService.extractData(res).sort((a: Article, b: Article) => {
+        const d1 = new Date(a.date);
+        const d2 = new Date(b.date);
+        return d2.getTime() - d1.getTime();
+      }).slice(0, 2));
   }
 
 }

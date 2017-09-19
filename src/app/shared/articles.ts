@@ -10,7 +10,7 @@ export const ARTICLES: Article[] = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         imageIds: [1, 2, 3],
         source: 'ya.ru',
-        date: '2014-09-05T17:57:28.556094Z'
+        date: '2011-10-05T14:48:00.000Z'
     },
     {
         id: 1,
@@ -32,6 +32,6 @@ export const ARTICLES: Article[] = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         imageIds: [1, 2, 3],
         source: 'ya.ru',
-        date: '2014-09-05T17:57:28.556094Z'
+        date: '2016-04-05T17:57:28.556094Z'
     }
 ];

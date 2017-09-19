@@ -15,7 +15,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
     this.articleservice.getLastArticles()
-      .subscribe(articles => this.articles = articles.filter(article => article.id > articles.length - 3));
+      .subscribe(articles => this.articles = articles);
   }
 
 }
