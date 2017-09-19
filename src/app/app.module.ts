@@ -18,13 +18,13 @@ import { MenuComponent } from './menu/menu.component';
 import { FlowerdetailComponent } from './flowerdetail/flowerdetail.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { MainComponent } from './main/main.component';
-import { DiscussionsComponent } from './discussions/discussions.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ArticledetailComponent } from './articledetail/articledetail.component';
 
 import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
+import { FairComponent } from './fair/fair.component';
 
 
 
@@ -35,10 +35,10 @@ import { ArticleService } from './services/article.service';
     FlowerdetailComponent,
     ArticlesComponent,
     MainComponent,
-    DiscussionsComponent,
     HeaderComponent,
     FooterComponent,
-    ArticledetailComponent
+    ArticledetailComponent,
+    FairComponent
   ],
   imports: [
     BrowserModule,

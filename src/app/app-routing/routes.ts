@@ -5,14 +5,15 @@ import { FlowerdetailComponent } from '../flowerdetail/flowerdetail.component';
 import { MainComponent } from '../main/main.component';
 import { ArticlesComponent } from '../articles/articles.component';
 import { ArticledetailComponent } from '../articledetail/articledetail.component';
-import { DiscussionsComponent } from '../discussions/discussions.component';
+import { FairComponent } from '../fair/fair.component';
 
 export const routes: Routes = [
+    {path: '', redirectTo: '/main', pathMatch: 'full'},
+    {path: 'main', component: MainComponent},
     {path: 'menu', component: MenuComponent},
     {path: 'flowerdetail/:id', component: FlowerdetailComponent},
-    {path: 'main', component: MainComponent},
     {path: 'articles', component: ArticlesComponent},
     {path: 'articledetail/:id', component: ArticledetailComponent},
-    {path: 'discussions', component: DiscussionsComponent}
+    {path: 'fair', component: FairComponent}
 ];
 
