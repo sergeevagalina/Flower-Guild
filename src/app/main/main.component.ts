@@ -14,8 +14,15 @@ export class MainComponent implements OnInit {
   constructor(private articleservice: ArticleService) { }
 
   ngOnInit() {
-    this.articleservice.getLastArticles()
-      .subscribe(articles => this.articles = articles);
+    this.articleservice.getArticles().subscribe(
+      articles => this.articles = articles.sort(
+        (a: Article, b: Article) => {
+          const d1 = new Date(a.date);
+          const d2 = new Date(b.date);
+          return d2.getTime() - d1.getTime();
+        }
+      ).slice(0, 2)
+    );
   }
 
 }
