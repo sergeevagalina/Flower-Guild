@@ -26,7 +26,7 @@ export class ArticleService {
   }
 
   getRelevantArticles(flowerId: number): Observable<Article[]> {
-    return this.http.get(baseURL + 'articles/' + flowerId)
+    return this.http.get(baseURL + 'articles?flowerId=' + flowerId)
       .map(res => this.processHTTPMsgService.extractData(res));
   }
 

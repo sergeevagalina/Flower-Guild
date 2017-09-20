@@ -24,10 +24,13 @@ export class FlowerdetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.switchMap(params => this.flowerservice.getFlower(+params['id']))
-    .subscribe(flower => this.flower = flower);
+      .subscribe(flower => this.flower = flower);
 
-    this.route.params.switchMap(params => this.articleservice.getRelevantArticles(+params['id']) )
-    .subscribe(articles => this.articles = articles );
+    this.route.params.switchMap(params => this.articleservice.getRelevantArticles(+params['id']))
+      .subscribe(articles => {
+        this.articles = articles;
+        console.log(this.articles);
+      });
   }
 
 }
