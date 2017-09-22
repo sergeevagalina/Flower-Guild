@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../shared/product';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-fair',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FairComponent implements OnInit {
 
-  constructor() { }
+  products: Product[];
+
+  constructor(private productservice: ProductService) { }
 
   ngOnInit() {
+    this.productservice.getProducts()
+      .subscribe(products => this.products = products);
   }
 
 }

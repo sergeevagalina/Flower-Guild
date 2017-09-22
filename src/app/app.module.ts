@@ -25,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
+import { ProductService } from './services/product.service';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ArticleService } from './services/article.service';
   providers: [
     FlowerService,
     ArticleService,
+    ProductService,
     {provide: 'BaseURL', useValue: baseURL}
   ],
   bootstrap: [AppComponent]

@@ -108,5 +108,77 @@ export const FLOWERS: Flower[] = [
           date: '2016-07-05T17:57:28.556094Z'
         }
       ]
+    },
+    {
+      id: 6,
+      name: 'Фиалка',
+      image: '/assets/images/violet.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
+      advices: [
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 1',
+          date: '2012-10-16T17:57:28.556094Z'
+        },
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 2',
+          date: '2014-09-05T17:57:28.556094Z'
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: 'Орхидея',
+      image: '/assets/images/orchid.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
+      advices: [
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 1',
+          date: '2012-10-16T17:57:28.556094Z'
+        },
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 2',
+          date: '2014-09-05T17:57:28.556094Z'
+        }
+      ]
+    },
+    {
+      id: 8,
+      name: 'Бегония',
+      image: '/assets/images/begonia.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
+      advices: [
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 1',
+          date: '2012-10-16T17:57:28.556094Z'
+        },
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 2',
+          date: '2014-09-05T17:57:28.556094Z'
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: 'Калла',
+      image: '/assets/images/kalla.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
+      advices: [
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 1',
+          date: '2012-10-16T17:57:28.556094Z'
+        },
+        {
+          advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',
+          author: 'Author 2',
+          date: '2014-09-05T17:57:28.556094Z'
+        }
+      ]
     }
   ];
