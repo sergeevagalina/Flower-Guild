@@ -1,4 +1,4 @@
-<div class="container" fxLayout="column" fxLayoutGap="20px">
+<div class="container" fxLayout="column" fxLayoutGap="30px">
 
   <div fxFlex>
     <div>
@@ -9,8 +9,8 @@
 
   <div fxFlex>
     <md-grid-list cols="6" rowHeight="300px" gutterSize="10px">
-      <md-grid-tile *ngFor="let product of products">
-        <md-card>
+      <md-grid-tile *ngFor="let product of products" [routerLink]="['/productdetail', product.id]">
+        <md-card class="product">
           <md-card-header>
             <md-card-title>{{product.name}}</md-card-title>
             <md-card-subtitle class="badge" [ngClass]="{'Продажа':'sale','Обмен':'exchange','Продажа / Обмен':'sale-exchange'}[product.dealtype]">{{product.dealtype}}</md-card-subtitle>

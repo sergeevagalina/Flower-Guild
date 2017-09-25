@@ -27,10 +27,7 @@ export class FlowerdetailComponent implements OnInit {
       .subscribe(flower => this.flower = flower);
 
     this.route.params.switchMap(params => this.articleservice.getRelevantArticles(+params['id']))
-      .subscribe(articles => {
-        this.articles = articles;
-        console.log(this.articles);
-      });
+      .subscribe(articles => this.articles = articles);
   }
 
 }

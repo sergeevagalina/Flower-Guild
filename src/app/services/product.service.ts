@@ -14,4 +14,8 @@ export class ProductService {
     return this.restangular.all('products').getList();
   }
 
+  getProduct(id: number): Observable<Product> {
+    return this.restangular.one('products', id).get();
+  }
+
 }

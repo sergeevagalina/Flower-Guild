@@ -12,3 +12,22 @@ body {
     margin: 20px;
     display: flex;
 }
+
+.badge {
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+}
+
+.sale {
+  background-color: #F44336;
+}
+
+.exchange {
+  background-color: #FFEB3B;
+}
+
+.sale-exchange {
+  background-color: #FF9800;
+}

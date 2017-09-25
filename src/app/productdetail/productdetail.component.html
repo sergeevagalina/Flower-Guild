@@ -1,0 +1,27 @@
+<div class="container" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-around center">
+
+  <div fxFlex="55">
+    <div fxFlex *ngIf="product">
+      <md-card class="productdetail">
+        <img md-card-image height="300px" src="{{product.image}}" alt="{{product.name}}">
+        <md-card-content>
+          <p>{{product.description}}</p>
+        </md-card-content>
+      </md-card>
+    </div>
+  </div>
+
+  <div fxFlex="30">
+    <div fxFlex *ngIf="product">
+      <div fxFlex>
+        <h3>{{product.name}}</h3>
+        <p class="badge" [ngClass]="{'Продажа':'sale','Обмен':'exchange','Продажа / Обмен':'sale-exchange'}[product.dealtype]">{{product.dealtype}}</p>
+        <p>{{product.exchange}}</p>
+        <p>{{product.deliverytype}}</p>
+        <p>Имя автора</p>
+        <p>Контактная информация</p>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -26,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
 import { ProductService } from './services/product.service';
+import { ProductdetailComponent } from './productdetail/productdetail.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ProductService } from './services/product.service';
     HeaderComponent,
     FooterComponent,
     ArticledetailComponent,
-    FairComponent
+    FairComponent,
+    ProductdetailComponent
   ],
   imports: [
     BrowserModule,

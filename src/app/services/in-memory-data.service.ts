@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { InMemoryDbService, RequestInfo } from 'angular-in-memory-web-api';
-import {  ResponseOptions } from '@angular/http';
+import { ResponseOptions } from '@angular/http';
 import { FLOWERS } from '../shared/flowers';
 import { ARTICLES } from '../shared/articles';
 import { PRODUCTS } from '../shared/products';

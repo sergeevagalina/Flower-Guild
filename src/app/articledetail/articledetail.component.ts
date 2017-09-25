@@ -18,8 +18,7 @@ export class ArticledetailComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = +this.route.snapshot.params['id'];
-    this.articleservice.getArticle(id)
+    this.route.params.switchMap(params => this.articleservice.getArticle(+params['id']))
       .subscribe(article => this.article = article);
   }
 
