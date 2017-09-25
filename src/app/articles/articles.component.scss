@@ -1,6 +1,7 @@
+$primary-text-color:   #212121;
 a {
     text-decoration: none;
-    color: black;
+    color: $primary-text-color;
 }
 
 a:hover {

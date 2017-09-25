@@ -8,16 +8,16 @@
   </div>
 
   <div fxFlex>
-    <md-grid-list cols="6" rowHeight="400px" gutterSize="10px">
+    <md-grid-list cols="6" rowHeight="300px" gutterSize="10px">
       <md-grid-tile *ngFor="let product of products">
         <md-card>
           <md-card-header>
             <md-card-title>{{product.name}}</md-card-title>
-            <md-card-subtitle>{{product.dealtype}}</md-card-subtitle>
+            <md-card-subtitle class="badge" [ngClass]="{'Продажа':'sale','Обмен':'exchange','Продажа / Обмен':'sale-exchange'}[product.dealtype]">{{product.dealtype}}</md-card-subtitle>
           </md-card-header>
-          <img md-card-image height="100px"  src="{{product.image}}" alt="{{product.name}}">
+          <img md-card-image height="100px" src="{{product.image}}" alt="{{product.name}}">
           <md-card-content>
-            <p   style="overflow: hidden; text-overflow: ellipsis; height: 99px">{{product.description}}</p>
+            <p>{{product.description}}</p>
           </md-card-content>
         </md-card>
       </md-grid-tile>

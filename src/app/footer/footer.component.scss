@@ -6,6 +6,6 @@ $background-pale: #D1C4E9;
 }
 
 .footer {
- background-color: $background-pale;
- @include zero-margin(20px, 0px)
+    background-color: $background-pale;
+    @include zero-margin(20px, 0px)
 }

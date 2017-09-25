@@ -1,0 +1,32 @@
+
+p {
+    overflow: hidden;
+    line-height: 1.2em; 
+    height: 3.6em;
+}
+
+.mat-card {
+    background-color: #EDE7F6;
+}
+.mat-card-title {
+    text-align: center;
+}
+
+.badge {
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    width: 130px;
+}
+
+.sale {
+    background-color: #F44336;
+}
+
+.exchange {
+    background-color: #FFEB3B;
+}
+
+.sale-exchange {
+    background-color: #FF9800;
+}

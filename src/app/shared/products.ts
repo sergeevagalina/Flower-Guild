@@ -18,7 +18,7 @@ export const PRODUCTS = [
         name: 'Фиалка махровая',
         image: '/assets/images/violet.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
-        dealtype: 'Продажа',
+        dealtype: 'Продажа / Обмен',
         price: 50,
         exchange: '',
         userId: 0,
