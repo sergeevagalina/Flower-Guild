@@ -13,7 +13,7 @@
       <md-grid-tile *ngFor="let flower of flowers" [routerLink]="['/flowerdetail', flower.id]">
         <img height="200px" src="{{flower.image}}" alt="{{flower.name}}">
         <md-grid-tile-footer>
-          <h1> {{flower.name | uppercase}} </h1>
+          <h3>{{flower.name | uppercase}}</h3>
         </md-grid-tile-footer>
       </md-grid-tile>
     </md-grid-list>

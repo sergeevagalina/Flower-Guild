@@ -1,0 +1,57 @@
+<md-toolbar md-dialog-title color="primary">
+  Регистрация
+  <span class="flex-spacer"></span>
+  <button md-button md-dialog-close>&times;</button>
+</md-toolbar>
+
+<p>{{user | json}}</p>
+<form novalidate (ngSubmit)="onSubmit()" #loginForm="ngForm">
+  <md-dialog-content>
+    <p>
+      <md-input-container dividerColor="{{name.invalid && name.dirty ? 'warn' : 'primary'}}">
+        <input mdInput placeholder="Ваше имя" type="text" [(ngModel)]="user.name" name="name" #name="ngModel" minlength="2" maxlength="15"
+          required>
+        <md-hint>
+          <span [hidden]="name.pristine">
+            <span [hidden]="!name.errors?.required">Обязательно для заполнения</span>
+          <span [hidden]="!name.errors?.minlength">Минимум 2 символа</span>
+          </span>
+        </md-hint>
+      </md-input-container>
+      <md-input-container dividerColor="{{surname.invalid && surname.dirty ? 'warn' : 'primary'}}">
+        <input mdInput placeholder="Ваша фамилия" type="text" [(ngModel)]="user.surname" name="surname" #surname="ngModel" minlength="2"
+          maxlength="15" required>
+        <md-hint>
+          <span [hidden]="surname.pristine">
+            <span [hidden]="!surname.errors?.required">Обязательно для заполнения</span>
+          <span [hidden]="!surname.errors?.minlength">Минимум 2 символа</span>
+          </span>
+        </md-hint>
+      </md-input-container>
+      <md-input-container dividerColor="{{telnum.invalid && telnum.dirty ? 'warn' : 'primary'}}">
+        <span mdPrefix>+7 &nbsp;</span>
+        <input mdInput placeholder="Телефон" type="tel" [(ngModel)]="user.telnum" name="telnum" #telnum="ngModel" pattern="[0-9]*"
+          required>
+        <md-hint>
+          <span [hidden]="telnum.pristine">
+            <span [hidden]="!telnum.errors?.required">Обязательно для заполнения</span>
+          <span [hidden]="!telnum.errors?.pattern">Телефон должен содержать только цифры</span>
+          </span>
+        </md-hint>
+      </md-input-container>
+      <md-input-container dividerColor="{{email.invalid && email.dirty ? 'warn' : 'primary'}}">
+        <input mdInput placeholder="Email" type="email" [(ngModel)]="user.email" name="email" email #email="ngModel" required>
+        <md-hint>
+          <span [hidden]="email.pristine">
+            <span [hidden]="!email.errors?.required">Обязательно для заполнения</span>
+          </span>
+        </md-hint>
+      </md-input-container>
+    </p>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <span class="flex-spacer"></span>
+    <button md-button md-dialog-close>Отмена</button>
+    <button type="submit" md-button class="background-primary text-floral-white" [disabled]="loginForm.form.invalid">Зарегистрироваться</button>
+  </md-dialog-actions>
+</form>

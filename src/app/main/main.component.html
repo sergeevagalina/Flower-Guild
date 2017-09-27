@@ -2,14 +2,14 @@
 
   <div fxFlex>
     <div>
-      <h1>О проекте</h1>
+      <h2>О проекте</h2>
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie, nisi quis consequat volutpat, metus turpis finibus est, a elementum lorem felis at magna. Etiam elementum consectetur interdum. Integer condimentum eros id blandit tempus. Quisque eget orci volutpat, porta magna id, euismod dolor. Nullam ornare bibendum massa, a feugiat sem tempus nec. Nullam venenatis aliquet dolor. Etiam ultricies pharetra justo at volutpat. Pellentesque feugiat sed nulla eget viverra. Pellentesque placerat iaculis sollicitudin. Fusce libero enim, accumsan sit amet dolor eget, porttitor facilisis urna.</p>
     </div>
   </div>
 
   <div fxFlex *ngIf="articles">
-    <h2>Последние добавленные статьи</h2>
+    <h3>Последние добавленные статьи</h3>
     <md-list>
       <md-list-item *ngFor="let article of articles">
         <img md-list-avatar src={{article.image}} alt={{article.title}}>

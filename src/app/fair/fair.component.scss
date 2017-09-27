@@ -1,3 +1,4 @@
+$primary-color-pale:   #EDE7F6;
 
 p {
     overflow: hidden;
@@ -6,6 +7,6 @@ p {
 }
 
 .product {
-    background-color: #EDE7F6;
+    background-color: $primary-color-pale;
     text-align: center;
-  }
+}

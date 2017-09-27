@@ -4,6 +4,7 @@ import { ResponseOptions } from '@angular/http';
 import { FLOWERS } from '../shared/flowers';
 import { ARTICLES } from '../shared/articles';
 import { PRODUCTS } from '../shared/products';
+import { USERS } from '../shared/users';
 
 @Injectable()
 export class InMemoryDataService implements InMemoryDbService {
@@ -11,7 +12,8 @@ export class InMemoryDataService implements InMemoryDbService {
     const flowers = FLOWERS;
     const articles = ARTICLES;
     const products = PRODUCTS;
-    return { flowers, articles, products };
+    const users = USERS;
+    return { flowers, articles, products, users };
   }
 
   protected responseInterceptor(res: ResponseOptions, ri: RequestInfo): ResponseOptions {

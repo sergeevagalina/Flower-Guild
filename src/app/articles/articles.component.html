@@ -3,12 +3,8 @@
     <md-list>
       <md-list-item *ngFor="let article of articles">
         <img md-list-avatar src={{article.image}} alt={{article.title}}>
-        <a md-line [routerLink]="['/articledetail', article.id]">
-          <span> {{article.title}} </span>
-        </a>
-        <p md-line>
-          <span> {{article.review}} </span>
-        </p>
+        <a md-line [routerLink]="['/articledetail', article.id]">{{article.title}}</a>
+        <p md-line>{{article.review}}</p>
       </md-list-item>
     </md-list>
   </div>

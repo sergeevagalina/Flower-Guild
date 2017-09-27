@@ -7,6 +7,8 @@ import { baseURL } from './shared/baseurl';
 import { RestangularModule, Restangular } from 'ngx-restangular';
 import { RestangularConfigFactory } from './shared/restConfig';
 
+import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import 'hammerjs';
 
@@ -27,6 +29,7 @@ import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
 import { ProductService } from './services/product.service';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,8 @@ import { ProductdetailComponent } from './productdetail/productdetail.component'
     FooterComponent,
     ArticledetailComponent,
     FairComponent,
-    ProductdetailComponent
+    ProductdetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { ProductdetailComponent } from './productdetail/productdetail.component'
     FlexLayoutModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService, {delay: 1000}),
     RestangularModule.forRoot(RestangularConfigFactory),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     FlowerService,
@@ -56,6 +61,9 @@ import { ProductdetailComponent } from './productdetail/productdetail.component'
     ProductService,
     {provide: 'BaseURL', useValue: baseURL}
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    LoginComponent
+  ]
 })
 export class AppModule { }
