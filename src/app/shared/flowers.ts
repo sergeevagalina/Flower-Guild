@@ -2,7 +2,7 @@ import { Flower } from './flower';
 
 export const FLOWERS: Flower[] = [
     {
-      id: 0,
+      id: 1,
       name: 'Гибискус',
       image: '/assets/images/hibiscus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -20,7 +20,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 1,
+      id: 2,
       name: 'Кактус',
       image: '/assets/images/cactus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -38,7 +38,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 2,
+      id: 3,
       name: 'Спатифиллум',
       image: '/assets/images/spathiphyllum.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -56,7 +56,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 3,
+      id: 4,
       name: 'Герань',
       image: '/assets/images/geranium.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -74,7 +74,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 4,
+      id: 5,
       name: 'Гортензия',
       image: '/assets/images/hydrangea.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -92,7 +92,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 5,
+      id: 6,
       name: 'Суккуленты',
       image: '/assets/images/succulent.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -110,7 +110,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 6,
+      id: 7,
       name: 'Фиалка',
       image: '/assets/images/violet.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -128,7 +128,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 7,
+      id: 8,
       name: 'Орхидея',
       image: '/assets/images/orchid.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -146,7 +146,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 8,
+      id: 9,
       name: 'Бегония',
       image: '/assets/images/begonia.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
@@ -164,7 +164,7 @@ export const FLOWERS: Flower[] = [
       ]
     },
     {
-      id: 9,
+      id: 10,
       name: 'Калла',
       image: '/assets/images/kalla.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',

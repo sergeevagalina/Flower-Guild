@@ -24,12 +24,14 @@ import { ArticledetailComponent } from './articledetail/articledetail.component'
 import { FairComponent } from './fair/fair.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductdetailComponent } from './productdetail/productdetail.component';
+import { LoginComponent } from './login/login.component';
 
 import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
 import { ProductService } from './services/product.service';
-import { ProductdetailComponent } from './productdetail/productdetail.component';
-import { LoginComponent } from './login/login.component';
+import { UserService } from './services/user.service';
+
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import { LoginComponent } from './login/login.component';
     FlowerService,
     ArticleService,
     ProductService,
+    UserService,
     {provide: 'BaseURL', useValue: baseURL}
   ],
   bootstrap: [AppComponent],

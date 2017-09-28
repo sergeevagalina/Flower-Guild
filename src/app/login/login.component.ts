@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog, MdDialogRef } from '@angular/material';
 import { User } from '../shared/user';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -9,15 +10,17 @@ import { User } from '../shared/user';
 })
 export class LoginComponent implements OnInit {
 
-  user: User;
+  user = new User;
 
-  constructor(public dialogRef: MdDialogRef<LoginComponent>) { }
+  constructor(public dialogRef: MdDialogRef<LoginComponent>,
+    private userservice: UserService) { }
 
   ngOnInit() {
   }
 
   onSubmit() {
-    console.log('User: ', this.user);
+    this.userservice.submitUser(this.user)
+      .subscribe(user => console.log('отправлено' + user));
     this.dialogRef.close();
   }
 

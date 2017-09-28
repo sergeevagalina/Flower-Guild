@@ -16,8 +16,8 @@ export class HeaderComponent implements OnInit {
 
   openLoginForm() {
     this.dialog.open(LoginComponent, {
-      width: '350px',
-      height: '520px'
+      width: '470px',
+      height: '500px'
     });
   }
 
