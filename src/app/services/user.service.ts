@@ -9,8 +9,11 @@ export class UserService {
   constructor(private restangular: Restangular) { }
 
   submitUser(user: User): Observable<User> {
-    console.log(user);
     return this.restangular.all('users').post(user);
+  }
+
+  getUser(userId: number): Observable<User> {
+    return this.restangular.one('users', userId).get();
   }
 
 }

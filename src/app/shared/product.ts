@@ -28,4 +28,4 @@ export const Images = [
 
 export const ContactType = ['Тел.', 'Email'];
 
-export const DeliveryType = ['Самовывоз', 'До станции метро', 'По адресу покупателя', 'Почтовая служба'];
+export const DeliveryType = ['самовывоз', 'до станции метро', 'по адресу покупателя', 'почтовая служба'];

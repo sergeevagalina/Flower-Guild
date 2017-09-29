@@ -11,15 +11,15 @@
     </div>
   </div>
 
-  <div fxFlex="30">
+  <div fxFlex="35">
     <div fxFlex *ngIf="product">
       <div fxFlex>
-        <h3>{{product.name}}</h3>
+        <h3 class="highlight">{{product.name}}</h3>
         <p class="badge" [ngClass]="{'Продажа':'sale','Обмен':'exchange','Продажа / Обмен':'sale-exchange'}[product.dealtype]">{{product.dealtype}}</p>
-        <p>{{product.exchange}}</p>
-        <p>{{product.deliverytype}}</p>
-        <p>Имя автора</p>
-        <p>Контактная информация</p>
+        <p *ngIf="dealdetails" [ngClass]="{'Продажа':'sale-text','Обмен':'exchange-text','Продажа / Обмен':'sale-exchange-text'}[product.dealtype]">{{dealdetails}}</p>
+        <p><span class="highlight">Способ доставки: </span>{{product.deliverytype}}</p>
+        <p *ngIf="contactinfo"><span class="highlight">Контактная информация: </span>{{contactinfo}}</p>
+        <p *ngIf="user"><span class="highlight">Продавец: </span>{{user.name}}</p>
       </div>
     </div>
   </div>

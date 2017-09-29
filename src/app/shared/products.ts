@@ -2,7 +2,7 @@ import { Product } from './product';
 
 export const PRODUCTS = [
     {
-        id: 0,
+        id: 1,
         name: 'Каланхоэ',
         image: '/assets/images/plant.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
@@ -11,90 +11,90 @@ export const PRODUCTS = [
         exchange: 'Lorem ipsum dolor sit amet',
         userId: 2,
         contacttype: 'Тел.',
-        deliverytype: 'До станции метро'
+        deliverytype: 'самовывоз'
     },
     {
-        id: 1,
+        id: 2,
         name: 'Фиалка махровая',
         image: '/assets/images/violet.svg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа / Обмен',
         price: 50,
-        exchange: '',
-        userId: 0,
+        exchange: 'Lorem ipsum dolor sit amet',
+        userId: 3,
         contacttype: 'Email',
-        deliverytype: 'Самовывоз'
+        deliverytype: 'до станции метро'
     },
     {
-        id: 0,
-        name: 'Каланхоэ',
+        id: 3,
+        name: 'Глоксиния',
         image: '/assets/images/plant.svg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
-        dealtype: 'Обмен',
-        price: 0,
-        exchange: 'Lorem ipsum dolor sit amet',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
+        dealtype: 'Продажа',
+        price: 250,
+        exchange: '',
         userId: 2,
         contacttype: 'Тел.',
-        deliverytype: 'До станции метро'
+        deliverytype: 'самовывоз'
     },
     {
-        id: 1,
-        name: 'Фиалка махровая',
-        image: '/assets/images/violet.svg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
+        id: 4,
+        name: 'Спатифиллум',
+        image: '/assets/images/spathiphyllum.svg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
-        price: 50,
+        price: 150,
         exchange: '',
-        userId: 0,
+        userId: 1,
         contacttype: 'Email',
-        deliverytype: 'Самовывоз'
+        deliverytype: 'до станции метро'
     },
     {
-        id: 0,
-        name: 'Каланхоэ',
+        id: 5,
+        name: 'Гиппеаструм (луковицы)',
         image: '/assets/images/plant.svg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
+        dealtype: 'Продажа',
+        price: 85,
+        exchange: 'Lorem ipsum dolor sit amet',
+        userId: 1,
+        contacttype: 'Тел.',
+        deliverytype: 'почтовая служба'
+    },
+    {
+        id: 6,
+        name: 'Гибискус',
+        image: '/assets/images/hibiscus.svg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
+        dealtype: 'Продажа',
+        price: 200,
+        exchange: '',
+        userId: 3,
+        contacttype: 'Email',
+        deliverytype: 'до станции метро'
+    },
+    {
+        id: 7,
+        name: 'Орхидея Дендробиум',
+        image: '/assets/images/orchid.svg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
+        dealtype: 'Продажа',
+        price: 700,
+        exchange: '',
+        userId: 3,
+        contacttype: 'Email',
+        deliverytype: 'до станции метро'
+    },
+    {
+        id: 8,
+        name: 'Эхеверия Лау',
+        image: '/assets/images/succulent.svg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Обмен',
         price: 0,
-        exchange: 'Lorem ipsum dolor sit amet',
-        userId: 2,
+        exchange: 'Обменяю на любой другой вид эхеверии.',
+        userId: 1,
         contacttype: 'Тел.',
-        deliverytype: 'До станции метро'
-    },
-    {
-        id: 1,
-        name: 'Фиалка махровая',
-        image: '/assets/images/violet.svg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
-        dealtype: 'Продажа',
-        price: 50,
-        exchange: '',
-        userId: 0,
-        contacttype: 'Email',
-        deliverytype: 'Самовывоз'
-    },
-    {
-        id: 0,
-        name: 'Каланхоэ',
-        image: '/assets/images/plant.svg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
-        dealtype: 'Обмен',
-        price: 0,
-        exchange: 'Lorem ipsum dolor sit amet',
-        userId: 2,
-        contacttype: 'Тел.',
-        deliverytype: 'До станции метро'
-    },
-    {
-        id: 1,
-        name: 'Фиалка махровая',
-        image: '/assets/images/violet.svg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.',
-        dealtype: 'Продажа',
-        price: 50,
-        exchange: '',
-        userId: 0,
-        contacttype: 'Email',
-        deliverytype: 'Самовывоз'
+        deliverytype: 'самовывоз'
     }
 ];

@@ -1,6 +1,12 @@
 $primary-color-pale:   #EDE7F6;
+$primary-color-dark:   #512DA8;
 
 .productdetail {
     background-color: $primary-color-pale;
     padding: 50px;
 }
+
+.highlight {
+    color: $primary-color-dark;
+}
+
