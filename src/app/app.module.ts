@@ -31,6 +31,7 @@ import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
 import { ProductService } from './services/product.service';
 import { UserService } from './services/user.service';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { UserService } from './services/user.service';
     ArticledetailComponent,
     FairComponent,
     ProductdetailComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,8 @@ import { UserService } from './services/user.service';
   ],
   bootstrap: [AppComponent],
   entryComponents: [
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ]
 })
 export class AppModule { }

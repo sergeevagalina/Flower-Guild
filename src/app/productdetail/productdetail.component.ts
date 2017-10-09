@@ -26,7 +26,7 @@ export class ProductdetailComponent implements OnInit {
       .subscribe(product => {
         this.product = product;
         this.getDealDetails();
-        this.userservice.getUser(this.product.userId)
+        this.userservice.getUserById(this.product.userId)
           .subscribe(user => {
             this.user = user;
             this.getContactInfo();

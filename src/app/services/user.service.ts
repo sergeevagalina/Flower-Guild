@@ -12,7 +12,11 @@ export class UserService {
     return this.restangular.all('users').post(user);
   }
 
-  getUser(userId: number): Observable<User> {
+  getUser(email: string, password: string): Observable<User[]> {
+    return this.restangular.one('users').get({email: email} && {password: password});
+  }
+
+  getUserById(userId: number): Observable<User> {
     return this.restangular.one('users', userId).get();
   }
 

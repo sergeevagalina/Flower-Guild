@@ -1,11 +1,10 @@
 <md-toolbar color="primary">
-  <span>Flower Guild</span>
+  <span>FlowerGuild</span>
+  <i class="material-icons">local_florist</i>
   <a md-button routerLink="/main">Главная</a>
   <a md-button routerLink="/menu">Цветы</a>
   <a md-button routerLink="/articles">Статьи</a>
   <a md-button routerLink="/fair">Ярмарка</a>
   <span class="flex-spacer"></span>
-  <a md-button (click)="openLoginForm()">Регистрация</a>
+  <app-login></app-login>
 </md-toolbar>
-
-

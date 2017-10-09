@@ -1,70 +1,22 @@
-<md-toolbar md-dialog-title color="primary">
-  Регистрация
-  <span class="flex-spacer"></span>
-  <button md-button md-dialog-close>&times;</button>
-</md-toolbar>
+<div class="container" fxLayout="row">
 
-<form novalidate (ngSubmit)="onSubmit()" #loginForm="ngForm">
-  <md-dialog-content>
-    <p>
+  <form novalidate (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm" *ngIf="!user">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" [(ngModel)]="login.email" name="email" email #email="ngModel" class="form-control email" required>
+      <label for="password">Пароль</label>
+      <input type="password" [(ngModel)]="login.password" name="password" #password="ngModel" class="form-control password" required>
+      <button type="submit" md-icon-button [disabled]="loginForm.form.invalid">
+      <md-icon class="md-24">exit_to_app</md-icon>
+    </button>
+    </div>
+  </form>
+  
+  <span *ngIf="user">{{user.name}}</span>
+  <i *ngIf="user" class="material-icons">account_circle</i>
 
-      <md-input-container class="half-width" dividerColor="{{email.invalid && email.dirty ? 'warn' : 'primary'}}">
-        <input mdInput placeholder="Email" type="email" [(ngModel)]="user.email" name="email" email #email="ngModel" required>
-        <md-hint>
-          <span [hidden]="email.untouched">
-            <span [hidden]="!email.errors?.required">Обязательно для заполнения</span>
-          </span>
-        </md-hint>
-      </md-input-container>
+  
+  <a md-button *ngIf="!user" (click)="openSignupForm()">Регистрация</a>
+  <a md-button *ngIf="user" (click)="exit()">Выйти</a>
 
-      <md-input-container class="half-width" dividerColor="{{password.invalid && password.dirty ? 'warn' : 'primary'}}">
-        <input mdInput placeholder="Пароль" type="password" [(ngModel)]="user.password" name="pasword" #password="ngModel" required>
-        <md-hint>
-          <span [hidden]="password.untouched">
-            <span [hidden]="!password.errors?.required">Обязательно для заполнения</span>
-          </span>
-        </md-hint>
-      </md-input-container>
-      
-      <md-input-container class="half-width" dividerColor="{{name.invalid && name.dirty ? 'warn' : 'primary'}}">
-        <input mdInput placeholder="Ваше имя" type="text" [(ngModel)]="user.name" name="name" #name="ngModel" minlength="2" maxlength="15"
-          required>
-        <md-hint>
-          <span [hidden]="name.untouched">
-            <span [hidden]="!name.errors?.required">Обязательно для заполнения</span>
-          <span [hidden]="!name.errors?.minlength">Минимум 2 символа</span>
-          </span>
-        </md-hint>
-      </md-input-container>
-
-      <md-input-container class="half-width" dividerColor="{{surname.invalid && surname.dirty ? 'warn' : 'primary'}}">
-        <input mdInput placeholder="Ваша фамилия" type="text" [(ngModel)]="user.surname" name="surname" #surname="ngModel" minlength="2"
-          maxlength="15">
-        <md-hint>
-          <span [hidden]="surname.untouched">
-            <span [hidden]="!surname.errors?.minlength">Минимум 2 символа</span>
-          </span>
-        </md-hint>
-      </md-input-container>
-
-      <md-input-container class="full-width" dividerColor="{{address.invalid && address.dirty ? 'warn' : 'primary'}}">
-        <input mdInput placeholder="Адрес" type="text" [(ngModel)]="user.address" name="address" #address="ngModel">
-      </md-input-container>
-
-      <md-input-container class="full-width" dividerColor="{{telnum.invalid && telnum.dirty ? 'warn' : 'primary'}}">
-        <input mdInput placeholder="Телефон" type="tel" [(ngModel)]="user.telnum" name="telnum" #telnum="ngModel" pattern="[0-9]*">
-        <md-hint>
-          <span [hidden]="telnum.untouched">
-            <span [hidden]="!telnum.errors?.pattern">Телефон должен содержать только цифры</span>
-          </span>
-        </md-hint>
-      </md-input-container>
-
-    </p>
-  </md-dialog-content>
-  <md-dialog-actions>
-    <span class="flex-spacer"></span>
-    <button md-button md-dialog-close>Отмена</button>
-    <button type="submit" md-button class="background-primary text-floral-white" [disabled]="loginForm.form.invalid">Зарегистрироваться</button>
-  </md-dialog-actions>
-</form>
+</div>
