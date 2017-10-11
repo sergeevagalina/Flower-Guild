@@ -20,8 +20,15 @@ export class SignupComponent implements OnInit {
 
   onSubmit() {
     this.userservice.submitUser(this.user)
-      .subscribe(user => console.log('отправлено' + user));
+      .subscribe(user => {
+        console.log(user);
+        this.sendCurrentUser(user);
+      });
     this.dialogRef.close();
+  }
+
+  sendCurrentUser(user: User) {
+    this.userservice.sendCurrentUser(user);
   }
 
 }

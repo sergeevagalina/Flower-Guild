@@ -77,7 +77,7 @@ export const FLOWERS: Flower[] = [
       id: 5,
       name: 'Гортензия',
       image: '/assets/images/hydrangea.jpg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
+      description: 'Полукустарниковое листопадное растение с большими супротивно расположенными листьями. Соцветия крупные, шаровидные, до 30 см в диаметре, щитковидные, кистевидные или зонтиковидные, состоят из цветков, у которых вместо лепестков разросшиеся чашелистники белого, голубого, розового, сиреневого или красного цвета.',
       advices: [
         {
           advice: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis nec ligula fermentum consequat quis ac ipsum. Quisque purus tellus, viverra quis leo ac, dictum condimentum ligula. Aliquam molestie in mi quis interdum.',

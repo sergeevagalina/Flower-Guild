@@ -1,25 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs/Subscription';
 import { MdDialog, MdDialogRef } from '@angular/material';
 import { User } from '../shared/user';
 import { UserService } from '../services/user.service';
 import { Login } from '../shared/login';
 import { SignupComponent } from '../signup/signup.component';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnDestroy {
 
   login = new Login;
   user: User;
+  subscription: Subscription;
 
 
   constructor(private userservice: UserService,
-    public dialog: MdDialog) { }
+    public dialog: MdDialog) {
+      this.subscription = this.userservice.getCurrentUser()
+        .subscribe(user => this.user = user);
+}
 
-  ngOnInit() {
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
   onSubmit(loginForm: any) {
@@ -43,6 +50,5 @@ export class LoginComponent implements OnInit {
       height: '500px'
     });
   }
-
 
 }

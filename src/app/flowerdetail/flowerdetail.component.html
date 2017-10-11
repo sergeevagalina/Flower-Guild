@@ -1,39 +1,20 @@
-<div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around center"
-  fxLayoutGap="10px" fxLayoutGap.xs="0">
+<div class="container" fxLayout="row" fxLayoutAlign="space-around start">
+
 
   <div fxFlex="40">
-    <div fxFlex *ngIf="flower">
-      <md-card>
-        <md-card-header>
-          <md-card-title>
-            {{flower.name | uppercase}}
-          </md-card-title>
-        </md-card-header>
-        <img md-card-image src={{flower.image}} alt={{flower.name}}>
-        <md-card-content>
-          <p>{{flower.description}}
-          </p>
-        </md-card-content>
-      </md-card>
-    </div>
-  </div>
-
-  <div fxFlex="40">
-    <md-list *ngIf="flower">
-      <md-list-item *ngFor="let advice of flower.advices"> 
-        <p md-line>{{advice.advice}}</p>
-        <p md-line>{{advice.author}}</p>
-        <p md-line>{{advice.date | date}}</p>
-      </md-list-item>
-    </md-list>
-  </div>
-
-</div>
-
-<div class="container" fxLayout="row" fxLayoutAlign.gt-md="space-around center"
-fxLayoutGap="10px" fxLayoutGap.xs="0">
-    <div fxFlex *ngIf="articles">
-        <md-list>
+    <md-card *ngIf="flower">
+      <md-card-header>
+        <md-card-title>
+          <h3>{{flower.name | uppercase}}</h3>
+        </md-card-title>
+      </md-card-header>
+      <img md-card-image src={{flower.image}} alt={{flower.name}}>
+      <md-card-content>
+        <p>{{flower.description}}</p>
+      </md-card-content>
+    </md-card>
+    <div fxFlex fxFlexAlign="start">
+        <md-list *ngIf="articles">
           <md-list-item *ngFor="let article of articles">
             <img md-list-avatar src={{article.image}} alt={{article.title}}>
             <a md-line [routerLink]="['/articledetail', article.id]">
@@ -45,4 +26,43 @@ fxLayoutGap="10px" fxLayoutGap.xs="0">
           </md-list-item>
         </md-list>
       </div>
+  </div>
+
+
+  <div fxFlex="40" fxFlexAlign="start" >
+    <div fxLayout="column" fxLayoutGap="10px" *ngIf="flower">
+      <h3>Советы</h3>
+      <md-card *ngFor="let advice of flower.advices">
+        <md-card-content>
+          <p>{{advice.advice}}</p>
+          <p>{{advice.author}}</p>
+          <p>{{advice.date | date: 'shortDate'}}</p>
+        </md-card-content>
+      </md-card>
+      <md-card *ngIf="adviceForm.valid">
+        <md-card-content>
+          <p>{{adviceForm.get('advice').value}}</p>
+          <p>{{adviceForm.get('author').value}}</p>
+        </md-card-content>
+      </md-card>
+      <form novalidate [formGroup]="adviceForm" (ngSubmit)="onSubmit()">
+        <md-input-container class="full-width" dividerColor="{{(formErrors.author) ? 'warn' : 'primary'}}">
+          <input mdInput formControlName="author" placeholder="Ваше имя" type="text" required>
+          <md-hint>
+            <span [hidden]="(!formErrors.author)">{{formErrors.author}}</span>
+          </md-hint>
+        </md-input-container>
+        <md-input-container class="full-width" dividerColor="{{(formErrors.advice) ? 'warn' : 'primary'}}">
+          <textarea mdInput formControlName="advice" placeholder="Ваш совет" rows=5 required></textarea>
+          <md-hint>
+            <span [hidden]="(!formErrors.advice)">{{formErrors.advice}}</span>
+          </md-hint>
+        </md-input-container>
+        <button type="submit" md-button class="background-primary text-floral-white" [disabled]="adviceForm.invalid">Отправить</button>
+      </form>
+    </div>
+
+  </div>
+
+
 </div>

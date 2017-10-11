@@ -15,10 +15,4 @@ export class InMemoryDataService implements InMemoryDbService {
     const users = USERS;
     return { flowers, articles, products, users };
   }
-
-  protected responseInterceptor(res: ResponseOptions, ri: RequestInfo): ResponseOptions {
-    res.body = res.body['data'];
-    return res;
-}
-
 }
