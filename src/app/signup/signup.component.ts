@@ -19,16 +19,13 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit() {
+    this.user.email = this.user.email.replace(/@/g, '%40');
     this.userservice.submitUser(this.user)
       .subscribe(user => {
         console.log(user);
-        this.sendCurrentUser(user);
+        this.userservice.sendCurrentUser(user);
       });
     this.dialogRef.close();
-  }
-
-  sendCurrentUser(user: User) {
-    this.userservice.sendCurrentUser(user);
   }
 
 }

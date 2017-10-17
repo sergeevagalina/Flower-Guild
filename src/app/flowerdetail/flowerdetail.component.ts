@@ -26,6 +26,7 @@ export class FlowerdetailComponent implements OnInit {
   flowercopy = null;
   advicescopy = null;
 
+
   formErrors = {
     author: '',
     advice: ''
@@ -95,17 +96,6 @@ export class FlowerdetailComponent implements OnInit {
         this.flower.advices = this.advicescopy;
         console.log(errmess);
       });
-    // .subscribe(flower => {
-    //   this.flower = flower;
-    //   console.log(this.flower);
-    //   this.adviceForm.reset({
-    //     author: '',
-    //     advice: ''
-    //   });
-    // }, errmess => {
-    //   this.flower.advices = this.advicescopy;
-    //   console.log(errmess);
-    // });
   }
 
   // tslint:disable:forin

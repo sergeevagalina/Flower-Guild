@@ -7,6 +7,7 @@ import { ArticlesComponent } from '../articles/articles.component';
 import { ArticledetailComponent } from '../articledetail/articledetail.component';
 import { FairComponent } from '../fair/fair.component';
 import { ProductdetailComponent } from '../productdetail/productdetail.component';
+import { AdComponent } from '../ad/ad.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: '/main', pathMatch: 'full'},
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path: 'articles', component: ArticlesComponent},
     {path: 'articledetail/:id', component: ArticledetailComponent},
     {path: 'fair', component: FairComponent},
-    {path: 'productdetail/:id', component: ProductdetailComponent }
+    {path: 'productdetail/:id', component: ProductdetailComponent},
+    {path: 'ad', component: AdComponent}
 ];
 

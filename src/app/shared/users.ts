@@ -6,8 +6,8 @@ export const USERS = [
         name: 'Иван',
         surname: 'Иванов',
         address: '',
-        telnum: 89215619412,
-        email: 'ivanov@gmail.com',
+        telnum: '9215619412',
+        email: 'ivanov%40gmail.com',
         password: 'bbbb'
     },
     {
@@ -15,8 +15,8 @@ export const USERS = [
         name: 'Мария',
         surname: 'Сидорова',
         address: '',
-        telnum: 89215619444,
-        email: 'sidorova@gmail.com',
+        telnum: '9215619444',
+        email: 'sidorova%40gmail.com',
         password: 'vcvc'
     },
     {
@@ -24,8 +24,8 @@ export const USERS = [
         name: 'Анна',
         surname: 'Петрова',
         address: '',
-        telnum: 89215559412,
-        email: 'petrova@gmail.com',
+        telnum: '9215559412',
+        email: 'petrova%40gmail.com',
         password: 'fgfg'
     }
 ];

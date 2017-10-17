@@ -4,10 +4,9 @@ export class Product {
     image: string;
     description: string;
     dealtype: string;
-    price: number;
+    price: string;
     exchange: string;
     userId: number;
-    contacttype: string;
     deliverytype: string;
 }
 

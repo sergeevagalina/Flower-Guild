@@ -13,9 +13,9 @@ import { UserService } from '../services/user.service';
 export class ProductdetailComponent implements OnInit {
 
   product: Product;
-  user: User;
-  contactinfo: string;
   dealdetails: string;
+  contactinfo = new Array;
+
 
   constructor(private productservice: ProductService,
     private route: ActivatedRoute,
@@ -28,14 +28,14 @@ export class ProductdetailComponent implements OnInit {
         this.getDealDetails();
         this.userservice.getUserById(this.product.userId)
           .subscribe(user => {
-            this.user = user;
-            this.getContactInfo();
+            user.email = user.email.replace(/%40/g, '@');
+            if (user.telnum !== '') {
+              user.telnum = '+7' + user.telnum;
+              this.contactinfo.push(user.telnum);
+            }
+            this.contactinfo.push(user.email);
           });
       });
-  }
-
-  getContactInfo() {
-    return this.product.contacttype === 'Email' ? this.contactinfo = this.user.email : this.contactinfo = '+7' + this.user.telnum;
   }
 
   getDealDetails() {

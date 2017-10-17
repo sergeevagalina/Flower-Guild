@@ -1,0 +1,51 @@
+<div class="container" fxLayout="column">
+  <div fxFlex fxFlexOffset="40px">
+    <p class="warn-text" *ngIf="!userId">Для создания объявления необходимо выполнить вход в учетную запись или зарегистрироваться</p>
+    <form novalidate class="form-size" [formGroup]="adForm" (ngSubmit)="onSubmit()" *ngIf="userId && !product">
+      <h3>Форма подачи объявления</h3>
+      <md-input-container class="full-width" dividerColor="{{(formErrors.name) ? 'warn' : 'primary'}}">
+        <input mdInput formControlName="name" placeholder="Название товара" type="text" required>
+        <md-hint>
+          <span [hidden]="(!formErrors.name)">{{formErrors.name}}</span>
+        </md-hint>
+      </md-input-container>
+      <md-input-container class="full-width" dividerColor="{{(formErrors.description) ? 'warn' : 'primary'}}">
+        <textarea mdInput formControlName="description" placeholder="Описание товара" rows=5></textarea>
+      </md-input-container>
+      <md-radio-group formControlName="deliverytype" class="full-width">
+        <p>Способ доставки товара</p>
+        <md-radio-button class="radio-button" labelPosition="after" *ngFor="let deliverytype of deliveryType" [value]="deliverytype">
+          {{ deliverytype }}
+        </md-radio-button>
+      </md-radio-group>
+      <div class="full-width">
+        <md-select class="one-fourth-width" placeholder="Тип сделки" formControlName="dealtype">
+          <md-option *ngFor="let dealtype of dealType" [value]="dealtype">
+            {{ dealtype }}
+          </md-option>
+        </md-select>
+        <md-input-container class="one-fourth-width" dividerColor="{{(formErrors.price) ? 'warn' : 'primary'}}">
+          <input mdInput formControlName="price" placeholder="Цена" type="text">
+          <md-hint>
+            <span [hidden]="(formErrors.price)">Указывать при продаже</span>
+            <span [hidden]="(!formErrors.price)">{{formErrors.price}}</span>
+          </md-hint>
+        </md-input-container>
+        <md-input-container class="half-width" dividerColor="{{(formErrors.price) ? 'warn' : 'primary'}}">
+          <input mdInput formControlName="exchange" placeholder="Условия обмена" type="text">
+          <md-hint>
+            <span>Указывать при обмене</span>
+          </md-hint>
+        </md-input-container>
+      </div>
+      <md-radio-group formControlName="image" class="full-width">
+        <p>Выберите изображение</p>
+        <md-radio-button class="radio-with-image" labelPosition="after" *ngFor="let image of images" [value]="image">
+          <img md-card-image src="{{image}}" height="50px">
+        </md-radio-button>
+      </md-radio-group>
+      <button type="submit" md-button class="background-primary text-floral-white" [disabled]="adForm.invalid">Отправить</button>
+    </form>
+    <p *ngIf="product">Объявление опубликовано</p>
+  </div>
+</div>

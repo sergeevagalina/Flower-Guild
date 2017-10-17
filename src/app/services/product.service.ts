@@ -18,4 +18,8 @@ export class ProductService {
     return this.restangular.one('products', id).get();
   }
 
+  submitProduct(product: Product): Observable<Product> {
+    return this.restangular.all('products').post(product);
+  }
+
 }

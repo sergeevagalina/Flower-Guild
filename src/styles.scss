@@ -30,6 +30,10 @@ body {
   display: flex;
 }
 
+.warn-text {
+  color: $warn-color!important;
+}
+
 .background-primary {
   background-color: $primary-color-dark!important;
 }
@@ -65,6 +69,7 @@ body {
   background-color: #FF9800;
 }
 
+
 .sale-text {
   color: #F44336;
 }
@@ -75,4 +80,9 @@ body {
 
 .sale-exchange-text {
   color: #FF9800;
+}
+
+.main-content {
+  width:100%;
+  min-height:100px;
 }

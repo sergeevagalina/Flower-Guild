@@ -52,6 +52,7 @@
         </md-input-container>
   
         <md-input-container class="full-width" dividerColor="{{telnum.invalid && telnum.dirty ? 'warn' : 'primary'}}">
+          <span mdPrefix>+7 &nbsp;</span>
           <input mdInput placeholder="Телефон" type="tel" [(ngModel)]="user.telnum" name="telnum" #telnum="ngModel" pattern="[0-9]*">
           <md-hint>
             <span [hidden]="telnum.untouched">

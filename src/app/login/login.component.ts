@@ -30,13 +30,16 @@ export class LoginComponent implements OnDestroy {
   }
 
   onSubmit(loginForm: any) {
-    console.log(this.login);
-    this.userservice.getUser(this.login.email, this.login.password)
+    this.login.email = this.login.email.replace(/@/g, '%40');
+    this.userservice.getUser(this.login.password, this.login.email)
       .subscribe(user => {
         this.user = user[0];
+        console.log(user[0]);
+        console.log('current');
         console.log(this.user);
+        this.userservice.sendCurrentUser(this.user);
         loginForm.reset();
-      });
+      }, err => console.log(err));
   }
 
   exit() {

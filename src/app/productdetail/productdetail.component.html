@@ -18,7 +18,13 @@
         <p class="badge" [ngClass]="{'Продажа':'sale','Обмен':'exchange','Продажа / Обмен':'sale-exchange'}[product.dealtype]">{{product.dealtype}}</p>
         <p *ngIf="dealdetails" [ngClass]="{'Продажа':'sale-text','Обмен':'exchange-text','Продажа / Обмен':'sale-exchange-text'}[product.dealtype]">{{dealdetails}}</p>
         <p><span class="highlight">Способ доставки: </span>{{product.deliverytype}}</p>
-        <p *ngIf="contactinfo"><span class="highlight">Контактная информация: </span>{{contactinfo}}</p>
+        <md-list *ngIf="contactinfo">
+          <p class="highlight">Контактная информация: </p>
+          <md-list-item *ngFor="let contact of contactinfo">
+            <md-icon md-list-icon class="highlight">send</md-icon>
+            <p md-line> {{contact}} </p>
+          </md-list-item>
+        </md-list>
         <p *ngIf="user"><span class="highlight">Продавец: </span>{{user.name}}</p>
       </div>
     </div>

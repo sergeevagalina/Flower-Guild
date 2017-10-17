@@ -1,7 +1,8 @@
 <div class="container" fxLayout>
   <article fxFlex="90" *ngIf="article">
     <h3>{{article.title}}</h3>
-    <p>{{article.text}}</p>
+    <img src="{{article.image}}">
+    <p *ngFor="let paragraph of article.text">{{paragraph}}</p>
     <p>{{article.source}}</p>
     <p>{{article.date | date}}</p>
   </article>

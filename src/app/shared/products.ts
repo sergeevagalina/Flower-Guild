@@ -7,10 +7,9 @@ export const PRODUCTS = [
         image: '/assets/images/plant.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Обмен',
-        price: 0,
+        price: '',
         exchange: 'Lorem ipsum dolor sit amet',
         userId: 2,
-        contacttype: 'Тел.',
         deliverytype: 'самовывоз'
     },
     {
@@ -19,10 +18,9 @@ export const PRODUCTS = [
         image: '/assets/images/violet.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа / Обмен',
-        price: 50,
+        price: '50',
         exchange: 'Lorem ipsum dolor sit amet',
         userId: 3,
-        contacttype: 'Email',
         deliverytype: 'до станции метро'
     },
     {
@@ -31,10 +29,9 @@ export const PRODUCTS = [
         image: '/assets/images/plant.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
-        price: 250,
+        price: '250',
         exchange: '',
         userId: 2,
-        contacttype: 'Тел.',
         deliverytype: 'самовывоз'
     },
     {
@@ -43,10 +40,9 @@ export const PRODUCTS = [
         image: '/assets/images/spathiphyllum.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
-        price: 150,
+        price: '150',
         exchange: '',
         userId: 1,
-        contacttype: 'Email',
         deliverytype: 'до станции метро'
     },
     {
@@ -55,10 +51,9 @@ export const PRODUCTS = [
         image: '/assets/images/plant.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
-        price: 85,
+        price: '85',
         exchange: 'Lorem ipsum dolor sit amet',
         userId: 1,
-        contacttype: 'Тел.',
         deliverytype: 'почтовая служба'
     },
     {
@@ -67,10 +62,9 @@ export const PRODUCTS = [
         image: '/assets/images/hibiscus.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
-        price: 200,
+        price: '200',
         exchange: '',
         userId: 3,
-        contacttype: 'Email',
         deliverytype: 'до станции метро'
     },
     {
@@ -79,10 +73,9 @@ export const PRODUCTS = [
         image: '/assets/images/orchid.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
-        price: 700,
+        price: '700',
         exchange: '',
         userId: 3,
-        contacttype: 'Email',
         deliverytype: 'до станции метро'
     },
     {
@@ -91,10 +84,9 @@ export const PRODUCTS = [
         image: '/assets/images/succulent.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Обмен',
-        price: 0,
+        price: '',
         exchange: 'Обменяю на любой другой вид эхеверии.',
         userId: 1,
-        contacttype: 'Тел.',
         deliverytype: 'самовывоз'
     }
 ];

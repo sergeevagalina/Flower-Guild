@@ -4,8 +4,7 @@ export class Article {
     title: string;
     image: string;
     review: string;
-    text: string;
-    imageIds: number[];
+    text: string[];
     source: string;
     date: string;
 }

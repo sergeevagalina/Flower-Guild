@@ -34,6 +34,7 @@ import { FlowerService } from './services/flower.service';
 import { ArticleService } from './services/article.service';
 import { ProductService } from './services/product.service';
 import { UserService } from './services/user.service';
+import { AdComponent } from './ad/ad.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { UserService } from './services/user.service';
     FairComponent,
     ProductdetailComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AdComponent
   ],
   imports: [
     BrowserModule,
