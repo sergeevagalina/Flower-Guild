@@ -1,33 +1,41 @@
-<div class="container" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-around center">
+<div class="container" fxLayout="column">
+  <div fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-around center">
 
-  <div fxFlex="55">
-    <div fxFlex *ngIf="product">
-      <md-card class="productdetail">
-        <img md-card-image height="300px" src="{{product.image}}" alt="{{product.name}}">
-        <md-card-content>
-          <p>{{product.description}}</p>
-        </md-card-content>
-      </md-card>
-    </div>
-  </div>
-
-  <div fxFlex="35">
-    <div fxFlex *ngIf="product">
-      <div fxFlex>
-        <h3 class="highlight">{{product.name}}</h3>
-        <p class="badge" [ngClass]="{'Продажа':'sale','Обмен':'exchange','Продажа / Обмен':'sale-exchange'}[product.dealtype]">{{product.dealtype}}</p>
-        <p *ngIf="dealdetails" [ngClass]="{'Продажа':'sale-text','Обмен':'exchange-text','Продажа / Обмен':'sale-exchange-text'}[product.dealtype]">{{dealdetails}}</p>
-        <p><span class="highlight">Способ доставки: </span>{{product.deliverytype}}</p>
-        <md-list *ngIf="contactinfo">
-          <p class="highlight">Контактная информация: </p>
-          <md-list-item *ngFor="let contact of contactinfo">
-            <md-icon md-list-icon class="highlight">send</md-icon>
-            <p md-line> {{contact}} </p>
-          </md-list-item>
-        </md-list>
-        <p *ngIf="user"><span class="highlight">Продавец: </span>{{user.name}}</p>
+    <div fxFlex="55">
+      <div fxFlex *ngIf="product">
+        <md-card class="productdetail">
+          <img md-card-image height="300px" src="{{product.image}}" alt="{{product.name}}">
+          <md-card-content>
+            <p>{{product.description}}</p>
+          </md-card-content>
+        </md-card>
       </div>
     </div>
+
+    <div fxFlex="35">
+      <div fxFlex *ngIf="product">
+        <div fxFlex>
+          <h3 class="highlight">{{product.name}}</h3>
+          <p class="badge" [ngClass]="{'Продажа':'sale','Обмен':'exchange','Продажа / Обмен':'sale-exchange'}[product.dealtype]">{{product.dealtype}}</p>
+          <p *ngIf="dealdetails" [ngClass]="{'Продажа':'sale-text','Обмен':'exchange-text','Продажа / Обмен':'sale-exchange-text'}[product.dealtype]">{{dealdetails}}</p>
+          <p><span class="highlight">Способ доставки: </span>{{product.deliverytype}}</p>
+          <md-list *ngIf="contactinfo">
+            <p class="highlight">Контактная информация: </p>
+            <md-list-item *ngFor="let contact of contactinfo">
+              <md-icon md-list-icon class="highlight">send</md-icon>
+              <p md-line> {{contact}} </p>
+            </md-list-item>
+          </md-list>
+          <p *ngIf="user"><span class="highlight">Продавец: </span>{{user.name}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div fxFlex [hidden]="product" fxFlexAlign="center">
+    <md-spinner></md-spinner>
+    <h4>Идет загрузка . . .</h4>
   </div>
 
 </div>

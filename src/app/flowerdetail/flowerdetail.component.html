@@ -1,18 +1,26 @@
 <div class="container" fxLayout="row" fxLayoutAlign="space-around start">
 
-
   <div fxFlex="40">
-    <md-card *ngIf="flower">
-      <md-card-header>
-        <md-card-title>
-          <h3>{{flower.name | uppercase}}</h3>
-        </md-card-title>
-      </md-card-header>
-      <img md-card-image src={{flower.image}} alt={{flower.name}}>
-      <md-card-content>
-        <p>{{flower.description}}</p>
-      </md-card-content>
-    </md-card>
+
+    <div *ngIf="flower">    
+      <md-card>
+        <md-card-header>
+          <md-card-title>
+            <h3>{{flower.name | uppercase}}</h3>
+          </md-card-title>
+        </md-card-header>
+        <img md-card-image src={{flower.image}} alt={{flower.name}}>
+        <md-card-content>
+          <p>{{flower.description}}</p>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div fxFlex fxFlexAlign="center" [hidden]="flower">
+      <md-spinner></md-spinner>
+      <h4>Идет загрузка . . .</h4>
+    </div>
+
     <div fxFlex fxFlexAlign="start">
         <md-list *ngIf="articles">
           <md-list-item *ngFor="let article of articles">
@@ -26,6 +34,12 @@
           </md-list-item>
         </md-list>
       </div>
+
+    <div fxFlex fxFlexAlign="center" [hidden]="articles">
+      <md-spinner></md-spinner>
+      <h4>Идет загрузка . . .</h4>
+    </div>
+
   </div>
 
 
@@ -60,6 +74,11 @@
         </md-input-container>
         <button type="submit" md-button class="background-primary text-floral-white" [disabled]="adviceForm.invalid">Отправить</button>
       </form>
+    </div>
+
+    <div fxFlex fxFlexAlign="center" [hidden]="flower">
+      <md-spinner></md-spinner>
+      <h4>Идет загрузка . . .</h4>
     </div>
 
   </div>

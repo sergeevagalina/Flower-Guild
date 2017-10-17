@@ -8,7 +8,7 @@
     <hr>
   </div>
 
-  <div fxFlex>
+  <div fxFlex *ngIf="products">
     <md-grid-list cols="6" rowHeight="300px" gutterSize="10px">
       <md-grid-tile *ngFor="let product of products" [routerLink]="['/productdetail', product.id]">
         <md-card class="product">
@@ -23,6 +23,11 @@
         </md-card>
       </md-grid-tile>
     </md-grid-list>
+  </div>
+
+  <div fxFlex fxFlexAlign="center" [hidden]="products">
+    <md-spinner></md-spinner>
+    <h4>Идет загрузка . . .</h4>
   </div>
 
 </div>

@@ -1,4 +1,4 @@
-<div class="container" fxLayout>
+<div class="container" fxLayout="column">
   <article fxFlex="90" *ngIf="article">
     <h3>{{article.title}}</h3>
     <img src="{{article.image}}">
@@ -6,4 +6,8 @@
     <p>{{article.source}}</p>
     <p>{{article.date | date}}</p>
   </article>
+  <div fxFlex fxFlexAlign="center" [hidden]="article">
+    <md-spinner></md-spinner>
+    <h4>Идет загрузка . . .</h4>
+  </div>
 </div>
