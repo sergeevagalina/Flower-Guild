@@ -4,7 +4,7 @@ export const PRODUCTS = [
     {
         id: 1,
         name: 'Каланхоэ',
-        image: '/assets/images/plant.svg',
+        image: 'assets/images/plant.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Обмен',
         price: '',
@@ -15,7 +15,7 @@ export const PRODUCTS = [
     {
         id: 2,
         name: 'Фиалка махровая',
-        image: '/assets/images/violet.svg',
+        image: 'assets/images/violet.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа / Обмен',
         price: '50',
@@ -26,7 +26,7 @@ export const PRODUCTS = [
     {
         id: 3,
         name: 'Глоксиния',
-        image: '/assets/images/plant.svg',
+        image: 'assets/images/plant.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
         price: '250',
@@ -37,7 +37,7 @@ export const PRODUCTS = [
     {
         id: 4,
         name: 'Спатифиллум',
-        image: '/assets/images/spathiphyllum.svg',
+        image: 'assets/images/spathiphyllum.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
         price: '150',
@@ -48,7 +48,7 @@ export const PRODUCTS = [
     {
         id: 5,
         name: 'Гиппеаструм (луковицы)',
-        image: '/assets/images/plant.svg',
+        image: 'assets/images/plant.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
         price: '85',
@@ -59,7 +59,7 @@ export const PRODUCTS = [
     {
         id: 6,
         name: 'Гибискус',
-        image: '/assets/images/hibiscus.svg',
+        image: 'assets/images/hibiscus.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
         price: '200',
@@ -70,7 +70,7 @@ export const PRODUCTS = [
     {
         id: 7,
         name: 'Орхидея Дендробиум',
-        image: '/assets/images/orchid.svg',
+        image: 'assets/images/orchid.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Продажа',
         price: '700',
@@ -81,7 +81,7 @@ export const PRODUCTS = [
     {
         id: 8,
         name: 'Эхеверия Лау',
-        image: '/assets/images/succulent.svg',
+        image: 'assets/images/succulent.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut rem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit nibh eget lacus mollis tristique. Ut molestie lacus in quam viverra, et faucibus ipsum congue.ldfjgljcxlvjcgip;xkb;cb',
         dealtype: 'Обмен',
         price: '',

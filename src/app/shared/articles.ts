@@ -4,7 +4,7 @@ export const ARTICLES: Article[] = [
     {
         id: 1,
         flowerId: 3,
-        image: '/assets/images/spathiphyllum.jpg',
+        image: 'assets/images/spathiphyllum.jpg',
         title: 'Спатифиллум: почему сохнут кончики листьев',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         // tslint:disable-next-line:max-line-length
@@ -21,7 +21,7 @@ export const ARTICLES: Article[] = [
     {
         id: 2,
         flowerId: 5,
-        image: '/assets/images/hydrangea.jpg',
+        image: 'assets/images/hydrangea.jpg',
         title: 'Гортензия: как изменить окрас соцветий',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         // tslint:disable-next-line:max-line-length
@@ -38,7 +38,7 @@ export const ARTICLES: Article[] = [
     {
         id: 3,
         flowerId: 6,
-        image: '/assets/images/succulent.jpg',
+        image: 'assets/images/succulent.jpg',
         title: 'Cуккуленты: многообразие видов',
         review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem velit, finibus sit amet efficitur sed, aliquam in tortor.',
         text: [

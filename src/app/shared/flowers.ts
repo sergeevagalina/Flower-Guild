@@ -4,7 +4,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 1,
       name: 'Гибискус',
-      image: '/assets/images/hibiscus.jpg',
+      image: 'assets/images/hibiscus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -22,7 +22,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 2,
       name: 'Кактус',
-      image: '/assets/images/cactus.jpg',
+      image: 'assets/images/cactus.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -40,7 +40,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 3,
       name: 'Спатифиллум',
-      image: '/assets/images/spathiphyllum.jpg',
+      image: 'assets/images/spathiphyllum.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -58,7 +58,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 4,
       name: 'Герань',
-      image: '/assets/images/geranium.jpg',
+      image: 'assets/images/geranium.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -76,7 +76,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 5,
       name: 'Гортензия',
-      image: '/assets/images/hydrangea.jpg',
+      image: 'assets/images/hydrangea.jpg',
       description: 'Полукустарниковое листопадное растение с большими супротивно расположенными листьями. Соцветия крупные, шаровидные, до 30 см в диаметре, щитковидные, кистевидные или зонтиковидные, состоят из цветков, у которых вместо лепестков разросшиеся чашелистники белого, голубого, розового, сиреневого или красного цвета.',
       advices: [
         {
@@ -94,7 +94,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 6,
       name: 'Суккуленты',
-      image: '/assets/images/succulent.jpg',
+      image: 'assets/images/succulent.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -112,7 +112,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 7,
       name: 'Фиалка',
-      image: '/assets/images/violet.jpg',
+      image: 'assets/images/violet.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -130,7 +130,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 8,
       name: 'Орхидея',
-      image: '/assets/images/orchid.jpg',
+      image: 'assets/images/orchid.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -148,7 +148,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 9,
       name: 'Бегония',
-      image: '/assets/images/begonia.jpg',
+      image: 'assets/images/begonia.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
@@ -166,7 +166,7 @@ export const FLOWERS: Flower[] = [
     {
       id: 10,
       name: 'Калла',
-      image: '/assets/images/kalla.jpg',
+      image: 'assets/images/kalla.jpg',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas id orci ac elementum. Sed quis ante tortor.',
       advices: [
         {
