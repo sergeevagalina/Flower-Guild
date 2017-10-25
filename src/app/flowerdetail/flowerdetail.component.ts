@@ -25,6 +25,9 @@ export class FlowerdetailComponent implements OnInit {
   advice: Advice;
   flowercopy = null;
   advicescopy = null;
+  prev: number;
+  next: number;
+  flowerIds: number[];
 
 
   formErrors = {
@@ -51,10 +54,14 @@ export class FlowerdetailComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.flowerservice.getFlowerIds()
+    .subscribe(flowerIds => this.flowerIds = flowerIds);
     this.route.params.switchMap(params => this.flowerservice.getFlower(+params['id']))
       .subscribe(flower => {
         this.flower = flower;
         this.flowercopy = flower;
+        this.preparePrevId(flower.id);
+        this.prepareNextId(flower.id);
         console.log(this.flowercopy);
       });
 
@@ -96,6 +103,16 @@ export class FlowerdetailComponent implements OnInit {
         this.flower.advices = this.advicescopy;
         console.log(errmess);
       });
+  }
+
+  preparePrevId(flowerId: number) {
+    const ci = this.flowerIds.indexOf(flowerId);
+    this.prev = ci === 0 ? this.flowerIds[this.flowerIds.length - 1] : this.flowerIds[ci - 1];
+  }
+
+  prepareNextId(flowerId: number) {
+    const ci = this.flowerIds.indexOf(flowerId);
+    this.next = ci === this.flowerIds.length - 1 ? this.flowerIds[0] : this.flowerIds[ci + 1];
   }
 
   // tslint:disable:forin

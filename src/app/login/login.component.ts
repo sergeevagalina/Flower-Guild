@@ -31,16 +31,19 @@ export class LoginComponent implements OnDestroy {
 
   onSubmit(loginForm: any) {
     const email = this.login.email.replace(/@/g, '%40');
-    this.userservice.getUser(this.login.password, email)
+      this.userservice.getUser(email)
       .subscribe(user => {
-        this.user = user[0];
-        console.log(user[0]);
-        console.log('current');
-        console.log(this.user);
-        this.userservice.sendCurrentUser(this.user);
-        loginForm.reset();
+        if (user[0].password === this.login.password) {
+          // this.user = user[0];
+          console.log(user[0]);
+          this.userservice.sendCurrentUser(user[0]);
+          loginForm.reset();
+        } else {
+          alert('Неверный пароль');
+        }
       }, err => console.log(err));
   }
+
 
   exit() {
     this.user = null;
@@ -54,4 +57,8 @@ export class LoginComponent implements OnDestroy {
     });
   }
 
+
+    private newFunction(email: string) {
+        return this.userservice.getUser(email);
+    }
 }

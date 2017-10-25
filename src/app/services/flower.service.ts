@@ -21,4 +21,9 @@ export class FlowerService {
     return this.restangular.one('flowers', id).get();
   }
 
+  getFlowerIds(): Observable<number[]> {
+    return this.getFlowers()
+      .map(flowers => flowers.map(flower => flower.id));
+  }
+
 }

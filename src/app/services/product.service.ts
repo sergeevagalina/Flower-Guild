@@ -22,4 +22,9 @@ export class ProductService {
     return this.restangular.all('products').post(product);
   }
 
+  getProductIds(): Observable<number[]> {
+    return this.getProducts()
+      .map(products => products.map(product => product.id));
+  }
+
 }

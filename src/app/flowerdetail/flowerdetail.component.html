@@ -2,7 +2,7 @@
 
   <div fxFlex="40">
 
-    <div *ngIf="flower">    
+    <div *ngIf="flower">
       <md-card>
         <md-card-header>
           <md-card-title>
@@ -13,6 +13,14 @@
         <md-card-content>
           <p>{{flower.description}}</p>
         </md-card-content>
+        <md-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button md-button [routerLink]="['/flowerdetail', prev]">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </button>
+          <button md-button [routerLink]="['/flowerdetail', next]">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </button>
+        </md-card-actions>
       </md-card>
     </div>
 
@@ -22,18 +30,18 @@
     </div>
 
     <div fxFlex fxFlexAlign="start">
-        <md-list *ngIf="articles">
-          <md-list-item *ngFor="let article of articles">
-            <img md-list-avatar src={{article.image}} alt={{article.title}}>
-            <a md-line [routerLink]="['/articledetail', article.id]">
+      <md-list *ngIf="articles">
+        <md-list-item *ngFor="let article of articles">
+          <img md-list-avatar src={{article.image}} alt={{article.title}}>
+          <a md-line [routerLink]="['/articledetail', article.id]">
               <span> {{article.title}} </span>
             </a>
-            <p md-line>
-              <span> {{article.review}} </span>
-            </p>
-          </md-list-item>
-        </md-list>
-      </div>
+          <p md-line>
+            <span> {{article.review}} </span>
+          </p>
+        </md-list-item>
+      </md-list>
+    </div>
 
     <div fxFlex fxFlexAlign="center" [hidden]="articles">
       <md-spinner></md-spinner>
@@ -43,7 +51,7 @@
   </div>
 
 
-  <div fxFlex="40" fxFlexAlign="start" >
+  <div fxFlex="40" fxFlexAlign="start">
     <div fxLayout="column" fxLayoutGap="10px" *ngIf="flower">
       <h3>Советы</h3>
       <md-card *ngFor="let advice of flower.advices">

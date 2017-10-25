@@ -14,12 +14,12 @@ import { UserService } from '../services/user.service';
 export class AdComponent implements OnDestroy {
 
   subscription: Subscription;
+  userId: number;
   adForm: FormGroup;
   dealType = DealType;
   images = Images;
   deliveryType = DeliveryType;
   product: Product;
-  userId: number;
 
   formErrors = {
     name: '',
@@ -35,8 +35,14 @@ export class AdComponent implements OnDestroy {
       'required': 'Обязательно для заполнения',
       'pattern': 'Только цифры'
     },
-    'exchange': {
-      'required': 'Обязательно для заполнения'
+    'dealtype': {
+      'required': 'Обязательно для заполнения',
+    },
+    'image': {
+      'required': 'Обязательно для заполнения',
+    },
+    'deliverytype': {
+      'required': 'Обязательно для заполнения',
     }
   };
 
@@ -45,8 +51,9 @@ export class AdComponent implements OnDestroy {
     private productservice: ProductService) {
     this.subscription = this.userservice.getCurrentUser()
       .subscribe(user => {
-        console.log('from login');
-        console.log(user);
+        if (user == null) {
+          return;
+        }
         this.userId = user.id;
       });
     this.createForm();
@@ -60,11 +67,11 @@ export class AdComponent implements OnDestroy {
     this.adForm = this.fb.group({
       name: ['', Validators.required],
       description: '',
-      dealtype: '',
+      dealtype: ['', Validators.required],
       price: ['', Validators.pattern],
       exchange: '',
-      image: '/assets/images/plant.svg',
-      deliverytype: 'самовывоз',
+      image: ['', Validators.required],
+      deliverytype: ['', Validators.required]
     });
 
     this.adForm.valueChanges

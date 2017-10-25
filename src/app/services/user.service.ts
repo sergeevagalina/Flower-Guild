@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from '../shared/user';
-import { Subject } from 'rxjs/Subject';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Observable } from 'rxjs/Observable';
 import { RestangularModule, Restangular } from 'ngx-restangular';
 
@@ -9,7 +9,7 @@ export class UserService {
 
   constructor(private restangular: Restangular) { }
 
-  private subject = new Subject<User>();
+  private subject = new BehaviorSubject<User>(null);
 
   sendCurrentUser(user: User) {
     this.subject.next(user);
@@ -23,8 +23,8 @@ export class UserService {
     return this.restangular.all('users').post(user);
   }
 
-  getUser(password: string, email: string): Observable<User[]> {
-    return this.restangular.all('users').getList({password: password, email: email});
+  getUser(email: string): Observable<User[]> {
+    return this.restangular.all('users').getList({email: email});
   }
 
   getUserById(userId: number): Observable<User> {
