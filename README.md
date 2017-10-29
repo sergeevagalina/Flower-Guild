@@ -10,6 +10,7 @@
 * [Angular Flex-Layout](https://github.com/angular/flex-layout)
 * [ngx-restangular](https://github.com/2muchcoffeecom/ngx-restangular)
 * [rxjs](https://github.com/Reactive-Extensions/RxJS)
+
 Для эмуляции работы сервера (REST API) использован [in-memory-web-api](https://github.com/angular/in-memory-web-api), для имитации ожидания загрузки с бэкенда в нем установлена задержка в 1 секунду.
 
 ## Работа с сайтом
