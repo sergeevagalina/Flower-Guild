@@ -36,8 +36,10 @@ export class ProductdetailComponent implements OnInit {
         this.userservice.getUserById(this.product.userId)
           .subscribe(user => {
             user.email = user.email.replace(/%40/g, '@');
-            if (user.telnum !== '') {
+            if (user.telnum) {
               this.telnum = '+7' + user.telnum;
+            } else {
+              this.telnum = null;
             }
             this.user = user;
           });
