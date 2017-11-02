@@ -1,5 +1,5 @@
 <div class="container" fxLayout="column">
-  <div fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-around center">
+  <div fxLayout.gt-xs="row" fxLayout="column" fxLayoutGap="30px" fxLayoutAlign="space-around center">
 
     <div fxFlex="55">
       <div fxFlex *ngIf="product">
@@ -49,6 +49,7 @@
     <md-spinner></md-spinner>
     <h4>Идет загрузка . . .</h4>
   </div>
+
   <div fxFlex *ngIf="errMess" fxFlexAlign="center">
     <h3>{{errMess}}</h3>
   </div>
