@@ -28,7 +28,8 @@ export class FlowerdetailComponent implements OnInit {
   prev: number;
   next: number;
   flowerIds: number[];
-
+  flowerErrMess: string;
+  articleErrMess: string;
 
   formErrors = {
     author: '',
@@ -62,11 +63,11 @@ export class FlowerdetailComponent implements OnInit {
         this.flowercopy = flower;
         this.preparePrevId(flower.id);
         this.prepareNextId(flower.id);
-        console.log(this.flowercopy);
-      });
+      }, err => this.flowerErrMess = err.status + ' ' + err.statusText);
 
     this.route.params.switchMap(params => this.articleservice.getRelevantArticles(+params['id']))
-      .subscribe(articles => this.articles = articles);
+      .subscribe(articles => this.articles = articles,
+        err => this.articleErrMess = err.status + ' ' + err.statusText);
   }
 
   createForm() {
@@ -101,7 +102,6 @@ export class FlowerdetailComponent implements OnInit {
         });
       }, errmess => {
         this.flower.advices = this.advicescopy;
-        console.log(errmess);
       });
   }
 

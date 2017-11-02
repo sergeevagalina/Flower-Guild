@@ -6,8 +6,11 @@
     <p>{{article.source}}</p>
     <p>{{article.date | date}}</p>
   </article>
-  <div fxFlex fxFlexAlign="center" [hidden]="article">
+  <div fxFlex fxFlexAlign="center" [hidden]="article || errMess">
     <md-spinner></md-spinner>
     <h4>Идет загрузка . . .</h4>
+  </div>
+  <div fxFlex *ngIf="errMess" fxFlexAlign="center">
+    <h3>{{errMess}}</h3>
   </div>
 </div>

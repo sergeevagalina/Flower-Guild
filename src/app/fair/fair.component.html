@@ -25,9 +25,13 @@
     </md-grid-list>
   </div>
 
-  <div fxFlex fxFlexAlign="center" [hidden]="products">
+  <div fxFlex fxFlexAlign="center" [hidden]="products || errMess">
     <md-spinner></md-spinner>
     <h4>Идет загрузка . . .</h4>
+  </div>
+
+  <div fxFlex *ngIf="errMess" fxFlexAlign="center">
+    <h3>{{errMess}}</h3>
   </div>
 
 </div>

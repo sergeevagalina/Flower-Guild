@@ -24,11 +24,6 @@
       </md-card>
     </div>
 
-    <div fxFlex fxFlexAlign="center" [hidden]="flower">
-      <md-spinner></md-spinner>
-      <h4>Идет загрузка . . .</h4>
-    </div>
-
     <div fxFlex fxFlexAlign="start">
       <md-list *ngIf="articles">
         <md-list-item *ngFor="let article of articles">
@@ -43,13 +38,17 @@
       </md-list>
     </div>
 
-    <div fxFlex fxFlexAlign="center" [hidden]="articles">
-      <md-spinner></md-spinner>
-      <h4>Идет загрузка . . .</h4>
-    </div>
-
   </div>
 
+  <div fxFlex fxFlexAlign="center" [hidden]="flower && articles || flowerErrMess || articleErrMess">
+    <md-spinner></md-spinner>
+    <h4>Идет загрузка . . .</h4>
+  </div>
+
+  <div fxFlex *ngIf="flowerErrMess || articleErrMess" fxFlexAlign="center">
+    <h3 *ngIf="flowerErrMess">{{flowerErrMess}</h3>
+    <h3 *ngIf="articleErrMess">{{articleErrMess}}</h3>
+  </div>
 
   <div fxFlex="40" fxFlexAlign="start">
     <div fxLayout="column" fxLayoutGap="10px" *ngIf="flower">
@@ -83,13 +82,6 @@
         <button type="submit" md-button class="background-primary text-floral-white" [disabled]="adviceForm.invalid">Отправить</button>
       </form>
     </div>
-
-    <div fxFlex fxFlexAlign="center" [hidden]="flower">
-      <md-spinner></md-spinner>
-      <h4>Идет загрузка . . .</h4>
-    </div>
-
   </div>
-
 
 </div>

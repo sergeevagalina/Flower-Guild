@@ -13,13 +13,15 @@ import 'rxjs/add/operator/switchMap';
 export class ArticledetailComponent implements OnInit {
 
   article: Article;
+  errMess: string;
 
   constructor(private articleservice: ArticleService,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.switchMap(params => this.articleservice.getArticle(+params['id']))
-      .subscribe(article => this.article = article);
+      .subscribe(article => this.article = article,
+        err => this.errMess = err.status + ' ' + err.statusText);
   }
 
 }

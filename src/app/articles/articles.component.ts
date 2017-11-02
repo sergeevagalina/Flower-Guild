@@ -10,12 +10,16 @@ import { Article } from '../shared/article';
 export class ArticlesComponent implements OnInit {
 
   articles: Article[];
+  errMess: string;
 
   constructor(private articleService: ArticleService) { }
 
   ngOnInit() {
     this.articleService.getArticles()
-      .subscribe(articles => this.articles = articles);
+      .subscribe(
+        articles => this.articles = articles,
+        err => this.errMess = err.status + ' ' + err.statusText
+      );
   }
 
 }

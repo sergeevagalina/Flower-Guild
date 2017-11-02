@@ -10,12 +10,14 @@ import { ProductService } from '../services/product.service';
 export class FairComponent implements OnInit {
 
   products: Product[];
+  errMess: string;
 
   constructor(private productservice: ProductService) { }
 
   ngOnInit() {
     this.productservice.getProducts()
-      .subscribe(products => this.products = products);
+      .subscribe(products => this.products = products,
+        err => this.errMess = err.status + ' ' + err.statusText);
   }
 
 }

@@ -45,9 +45,12 @@
 
   </div>
 
-  <div fxFlex [hidden]="product" fxFlexAlign="center">
+  <div fxFlex [hidden]="product || errMess" fxFlexAlign="center">
     <md-spinner></md-spinner>
     <h4>Идет загрузка . . .</h4>
+  </div>
+  <div fxFlex *ngIf="errMess" fxFlexAlign="center">
+    <h3>{{errMess}}</h3>
   </div>
 
 </div>

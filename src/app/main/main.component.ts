@@ -10,6 +10,7 @@ import { ArticleService } from '../services/article.service';
 export class MainComponent implements OnInit {
 
   articles: Article[];
+  errMess: string;
 
   constructor(private articleservice: ArticleService) { }
 
@@ -21,7 +22,8 @@ export class MainComponent implements OnInit {
           const d2 = new Date(b.date);
           return d2.getTime() - d1.getTime();
         }
-      ).slice(0, 2)
+      ).slice(0, 2),
+      err => this.errMess = err.status + ' ' + err.statusText
     );
   }
 

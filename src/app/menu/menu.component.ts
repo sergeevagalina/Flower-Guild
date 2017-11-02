@@ -10,13 +10,15 @@ import { FlowerService } from '../services/flower.service';
 export class MenuComponent implements OnInit {
 
   flowers: Flower[];
+  errMess: string;
 
   constructor(private flowerService: FlowerService) { }
 
   ngOnInit() {
     this.flowerService.getFlowers()
       .subscribe(flowers =>
-        this.flowers = flowers);
+        this.flowers = flowers,
+        err => this.errMess = err.status + ' ' + err.statusText);
   }
 
 }

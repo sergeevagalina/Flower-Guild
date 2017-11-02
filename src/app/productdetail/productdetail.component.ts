@@ -19,6 +19,7 @@ export class ProductdetailComponent implements OnInit {
   productIds: number[];
   user: User;
   telnum: string;
+  errMess: string;
 
   constructor(private productservice: ProductService,
     private route: ActivatedRoute,
@@ -43,7 +44,8 @@ export class ProductdetailComponent implements OnInit {
             }
             this.user = user;
           });
-      });
+      }, err => this.errMess = err.status + ' ' + err.statusText
+    );
   }
 
   getDealDetails() {
